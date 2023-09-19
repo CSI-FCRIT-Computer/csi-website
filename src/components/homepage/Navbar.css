@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  padding-inline: 60px 120px;
+  height: 64px;
+}
+
+.navbar__brand {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar__links {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 40px;
+  font-size: 14px;
+}
+
+.navbar__links > li {
+  cursor: pointer;
+}
