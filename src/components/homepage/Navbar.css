@@ -21,4 +21,13 @@
 
 .navbar__links > li {
   cursor: pointer;
+
+}
+li {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.no-underline {
+  text-decoration: none;
 }
