@@ -2,9 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   padding-inline: 60px 120px;
   height: 64px;
+  width: 90vw;
+  position:absolute;
+  z-index: 4;
 }
 
 .navbar__brand {
