@@ -1,0 +1,56 @@
+[
+    {
+      "id":"1",
+      "img": "/assets/event/sample.jpg",
+      "title": "Event 1",
+      "content": "This is a card you can edit this text.",
+      "location": "116, New Building",
+      "date": "25-9-2023",
+      "time": "1:30 PM"
+    },
+    {
+      "id":"2",
+      "img": "/assets/event/sample.jpg",
+      "title": "Event 2",
+      "content": "This is a card you can edit this text.",
+      "location": "116, New Building",
+      "date": "25-9-2023",
+      "time": "1:30 PM"
+    },
+    {
+      "id":"3",
+      "img": "/assets/event/sample.jpg",
+      "title": "Event 3",
+      "content": "This is a card you can edit this text.",
+      "location": "116, New Building",
+      "date": "25-9-2023",
+      "time": "1:30 PM"
+    },
+    {
+      "id":"4",
+      "img": "/assets/event/sample.jpg",
+      "title": "Event 4",
+      "content": "This is a card you can edit this text.",
+      "location": "116, New Building",
+      "date": "25-9-2023",
+      "time": "1:30 PM"
+    },
+    {
+      "id":"5",
+      "img": "/assets/event/sample.jpg",
+      "title": "Event 3",
+      "content": "This is a card you can edit this text.",
+      "location": "116, New Building",
+      "date": "25-9-2023",
+      "time": "1:30 PM"
+    },
+    {
+      "id":"6",
+      "img": "/assets/event/sample.jpg",
+      "title": "Event 4",
+      "content": "This is a card you can edit this text.",
+      "location": "116, New Building",
+      "date": "25-9-2023",
+      "time": "1:30 PM"
+    }
+  ]
