@@ -19,7 +19,7 @@
       "date": "25-9-2023",
       "time": "1:30 PM",
       "tagLine": "Lorem ipsum is a placeholder or dummy text",
-      "type": "Technical"
+      "type": "Hackathon"
     },
     {
       "id":"3",
@@ -52,7 +52,7 @@
       "date": "25-9-2023",
       "time": "1:30 PM",
       "tagLine": "Lorem ipsum is a placeholder or dummy text",
-      "type": "Non Technical"
+      "type": "Technical"
     },
     {
       "id":"6",
@@ -63,6 +63,6 @@
       "date": "25-9-2023",
       "time": "1:30 PM",
       "tagLine": "Lorem ipsum is a placeholder or dummy text",
-      "type": "Non Technical"
+      "type": "Technical"
     }
   ]

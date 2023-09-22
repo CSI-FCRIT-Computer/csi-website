@@ -26,7 +26,7 @@
   cursor: pointer;
 
 }
-li {
+.no-underline li {
   cursor: pointer;
   text-decoration: none;
   color: #fff;

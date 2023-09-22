@@ -14,16 +14,16 @@ function MyCarousel() {
     infiniteLoop={true}
     >
       <div >
-        <img src={image1} alt="Image 1" style={{height:'80vh'}} />
+        <img src={image1} alt="Image 1" style={{height:"40rem"}} />
       </div>
       <div >
-        <img src={image2} alt="Image 2" style={{height:'80vh'}}/>
+        <img src={image2} alt="Image 2" style={{height:"40rem"}}/>
       </div>
       <div >
-        <img src={image1} alt="Image 1" style={{height:'80vh'}} />
+        <img src={image1} alt="Image 1" style={{height:"40rem"}} />
       </div>
       <div >
-        <img src={image2} alt="Image 2" style={{height:'80vh'}}/>
+        <img src={image2} alt="Image 2" style={{height:"40rem"}}/>
       </div>
     </Carousel>
   );
