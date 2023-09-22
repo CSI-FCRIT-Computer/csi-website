@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab:wght@900&family=Skranji:wght@700&display=swap');
+
 body{
     overflow-y: auto;
 }
@@ -18,7 +20,7 @@ body{
     background: #191c29;
     width: var(--card-width);
     height: var(--card-height);
-    padding: 3px;
+    padding: 0px;
     position: relative;
     border-radius: 6px;
     justify-content: center;
@@ -92,6 +94,7 @@ body{
 }
 .event-heading h1{
     font-size: 5rem;
+    font-family: 'Roboto Slab', serif;
 }
 .event__container{
     display: flex;
@@ -101,15 +104,6 @@ body{
     flex-wrap: wrap;
 }
 
-.preview{
-    position: absolute;
-    width: var(--card-width);
-    height: var(--card-height);
-    background: linear-gradient(to top, #000000cb, #ffffff00);
-}
-.preview p{
-    padding: 18rem 0 0 .5rem;
-}
 .hidden{
     display: flex;
     flex-direction: column;
@@ -136,27 +130,28 @@ body{
 }
 .card__description{
     text-align: left;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .card__body:hover .hidden{
     
     width: var(--card-width);
     height: var(--card-height);
     animation: flash .3s linear both;
-    /* transition: transform 300ms 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 }
 .card__title{
-    padding: .5rem 0 0 0 ;
+    padding: 1.5rem 0 ;
     font-weight: 700;
-    font-size: x-large;
+    font-size: 3rem;
     color: #fff;
+    font-family: 'Skranji', cursive;
 }
 .card__description{
     font-weight: 600;
-    font-size: small;
+    font-size: medium;
     color: #fff;
 }
 .card__img{
-    margin-bottom: -4px;
+    margin-bottom: -6px;
 }
 .card__img img{
     width: var(--card-width);
