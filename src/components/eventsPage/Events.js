@@ -12,7 +12,6 @@ function Events() {
   return (
     <div className="event__body">
         <div className='all'>
-        <MyCarousel/> 
         <div className='event-heading'><h1>Hackathons</h1></div>
         <div className="event__container">
       {hackathon.map((card) => (
@@ -26,7 +25,7 @@ function Events() {
         time={card.time} 
         date={card.date} 
         />
-      ))}
+        ))}
       </div>
         <div className='event-heading'><h1>Technical Events</h1></div>
         <div className="event__container">
@@ -44,6 +43,61 @@ function Events() {
       ))}
       </div>
     </div>
+    <div className='event-heading-carousel'><h1>Previous Event</h1></div>
+ <MyCarousel/> 
+ <div class="stars">
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+</div>
+<div className="main"></div>
     </div>
   )
 }
