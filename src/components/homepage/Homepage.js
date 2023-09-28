@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Homepage.css";
+import bg from '../homepage/csi-homepage2.png'
 
 function Homepage() {
   const [content, setContent] = useState(0);
@@ -34,8 +35,8 @@ function Homepage() {
   return (
     <div className="homepage">
       <img
+        src="{bg}"
         className="homepage_background"
-        src={require("./csi-homepage2.png")}
         alt="background-img"
         style={{ left: ltransform, top: tshift }}
       />
