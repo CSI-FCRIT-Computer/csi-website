@@ -409,4 +409,7 @@ body {
   .hidden button {
     margin: 1rem 0 0 10rem;
   }
+  .event-heading h1 {
+    font-size: 3rem;
+  }
 }
