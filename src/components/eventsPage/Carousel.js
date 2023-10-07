@@ -12,18 +12,19 @@ function MyCarousel() {
     autoPlay={true} 
     interval={3000} 
     infiniteLoop={true}
+    index={false}
     >
       <div >
-        <img src={image1} alt="Image 1" style={{height:"38rem",padding: "1rem 3rem"}} />
+        <img src={image1} alt="Image 1" style={{height:"70vh",padding: "1rem 0"}} />
       </div>
       <div >
-        <img src={image2} alt="Image 2" style={{height:"38rem",padding: "1rem 3rem"}}/>
+        <img src={image2} alt="Image 2" style={{height:"70vh",padding: "1rem 0"}}/>
       </div>
       <div >
-        <img src={image1} alt="Image 1" style={{height:"38rem",padding: "1rem 3rem"}} />
+        <img src={image1} alt="Image 1" style={{height:"70vh",padding: "1rem 0"}} />
       </div>
       <div >
-        <img src={image2} alt="Image 2" style={{height:"38rem",padding: "1rem 3rem"}}/>
+        <img src={image2} alt="Image 2" style={{height:"70vh",padding: "1rem 0"}}/>
       </div>
     </Carousel>
   );
