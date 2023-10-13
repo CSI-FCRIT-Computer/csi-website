@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Homepage.css";
-import bg from '../homepage/csi-homepage2.png'
+import bg from 'csi-homepage2.png'
 
 function Homepage() {
   const [content, setContent] = useState(0);
