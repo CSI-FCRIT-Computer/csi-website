@@ -1,37 +1,39 @@
 import React from "react";
 import "./event.css";
 import MyCarousel from "./Carousel";
+import MajorEventCard from "./majorEvent";
+import UpcomingEventCard from "./upcoming";
 import Card from "./Card";
 import eventList from "./eventList.json";
 
 function Events() {
-  const technicalCards = eventList.filter((card) => card.type === "Technical");
-  const hackathon = eventList.filter((card) => card.type === "Hackathon");
+  const previous_event = eventList.filter((card) => card.type === "previous_event");
+  const upcoming = eventList.filter((card) => card.type === "upcoming");
   return (
     <div className="event__body">
       <div className="all">
         <div className="event-heading">
-          <h1>Hackathons</h1>
+          <h1>Upcoming Events</h1>
         </div>
         <div className="event__container">
-          {hackathon.map((card) => (
-            <Card
-              key={card.id}
-              image={card.img}
-              title={card.title}
-              tagLine={card.tagLine}
-              content={card.content}
-              location={card.location}
-              time={card.time}
-              date={card.date}
+        {upcoming.map((card) => (
+            <UpcomingEventCard
+            key={card.id}
+            image={card.img}
+            title={card.title}
+            tagLine={card.tagLine}
+            content={card.content}
+            location={card.location}
+            time={card.time}
+            date={card.date}
             />
           ))}
         </div>
         <div className="event-heading">
-          <h1>Technical Events</h1>
+          <h1>Previous Event</h1>
         </div>
         <div className="event__container">
-          {technicalCards.map((card) => (
+          {previous_event.map((card) => (
             <Card
               key={card.id}
               image={card.img}
@@ -46,9 +48,24 @@ function Events() {
         </div>
       </div>
       <div className="event-heading">
-        <h1>Previous Event</h1>
+        <h1>Major Events</h1>
+        <div className="event__container">
+        {upcoming.map((card) => (
+            <MajorEventCard
+            key={card.id}
+            image={card.img}
+            title={card.title}
+            tagLine={card.tagLine}
+            content={card.content}
+            location={card.location}
+            time={card.time}
+            date={card.date}
+            />
+          ))}
+        </div>
+        
       </div>
-      <MyCarousel />
+      {/* <MyCarousel /> */}
       <div class="stars">
         <div class="star"></div>
         <div class="star"></div>

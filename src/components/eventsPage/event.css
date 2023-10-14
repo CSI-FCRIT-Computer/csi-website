@@ -3,201 +3,7 @@
 body {
   overflow-y: auto;
 }
-@property --rotate {
-  syntax: "<angle>";
-  initial-value: 132deg;
-  inherits: false;
-}
 
-:root {
-  --card-height: 28rem;
-  --card-width: calc(var(--card-height) / 1.5);
-}
-
-.card__body {
-  margin: 3rem;
-  background: #191c29;
-  width: var(--card-width);
-  height: var(--card-height);
-  padding: 0px;
-  position: relative;
-  border-radius: 6px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  font-size: 1.5rem;
-  color: rgb(88 199 250 / 0%);
-  cursor: pointer;
-}
-
-.card__body:hover {
-  color: rgb(88 199 250 / 100%);
-  transition: color 1s;
-}
-.card__body:hover:before,
-.card:hover:after {
-  animation: none;
-  opacity: 0;
-}
-.event-heading-carousel {
-  text-align: center;
-  font-size: 3rem;
-  font-family: "Roboto Slab", serif;
-  margin: -4rem;
-}
-
-.card__body::before {
-  content: "";
-  width: 104%;
-  height: 102%;
-  border-radius: 8px;
-  background-image: linear-gradient(
-    var(--rotate),
-    #5ddcff,
-    #3c67e3 43%,
-    #4e00c2
-  );
-  position: absolute;
-  z-index: -1;
-  top: -1%;
-  left: -2%;
-  animation: spin 2.5s linear infinite;
-}
-
-.card__body::after {
-  position: absolute;
-  content: "";
-  top: calc(var(--card-height) / 6);
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  transform: scale(0.8);
-  filter: blur(calc(var(--card-height) / 6));
-  background-image: linear-gradient(
-    var(--rotate),
-    #5ddcff,
-    #3c67e3 43%,
-    #4e00c2
-  );
-  opacity: 1;
-  transition: opacity 0.5s;
-  animation: spin 2.5s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    --rotate: 0deg;
-  }
-  100% {
-    --rotate: 360deg;
-  }
-}
-.all {
-  margin: 0;
-  padding: 0 0.5rem 0 0.5rem;
-}
-.event-heading {
-  text-align: center;
-}
-.event-heading h1 {
-  font-size: 5rem;
-  font-family: "Roboto Slab", serif;
-}
-.event__container {
-  display: flex;
-  margin: 2rem 6rem;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.hidden {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  transform: scale(0);
-}
-
-.hidden .card__description {
-  padding: 0 2rem;
-}
-
-@keyframes flash {
-  0% {
-    border-radius: 100%;
-    transform: scale(0);
-    margin-top: 20rem;
-  }
-  100% {
-    border-radius: 0%;
-    transform: scale(1);
-    margin: 0;
-  }
-}
-.card__description {
-  text-align: left;
-}
-.card__body:hover .hidden {
-  transform: scale(1);
-  width: var(--card-width);
-  height: var(--card-height);
-  animation: flash 0.3s linear both;
-  /* transition: transform 300ms 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275); */
-}
-.card__title {
-  padding: 1.5rem 0;
-  font-weight: 700;
-  font-size: 3rem;
-  color: #fff;
-  font-family: "Skranji", cursive;
-}
-.card__description {
-  font-weight: 600;
-  font-size: medium;
-  color: #fff;
-}
-.card__img {
-  margin-bottom: -6px;
-}
-.card__img img {
-  width: var(--card-width);
-  height: var(--card-height);
-  border-radius: 5px;
-}
-.card__body:hover {
-  transform: scale(1.1);
-  transition: transform 1ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.card__body:hover img {
-  filter: blur(5px);
-}
-.card__body:hover .preview {
-  transform: scale(0);
-}
-.card__ldt {
-  line-height: 1.5rem;
-  margin-bottom: 1rem;
-}
-.hidden button {
-  margin: 1rem 0 0 12rem;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0);
-  padding: 0.5rem 1.5rem;
-  border: 1px solid #fff;
-  border-radius: 2rem;
-}
-.hidden button:hover {
-  color: #000;
-  background-color: #fff;
-}
-.card__body:hover {
-  border: 4px solid #3c67e3;
-}
 
 .main {
   z-index: -1;
@@ -382,7 +188,7 @@ body {
     34vw 15vh 1px 1px #fff,
     29vw -37vh 1px 1px #fff,
     28vw 2vh 0px 0px #fff;
-  animation: zoom 10s alternate infinite;
+  animation: zoom 6s alternate infinite;
 }
 
 @keyframes zoom {
@@ -416,3 +222,39 @@ body {
 .carousel-status{
   font-size: 0!important;
 }
+.reduced-opacity {
+  opacity: 0.7;
+}
+.card-bg-color{
+  background-color: #290169a5;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 60%; /* Adjust the width as needed */
+  max-width: 600px; /* Optional: Set a maximum width */
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 252, 252, 0.5); /* Semi-transparent overlay */
+  z-index: 999; /* Ensure the overlay is below the popup */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Rest of your popup styles go here */
