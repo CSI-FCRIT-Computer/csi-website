@@ -199,35 +199,7 @@ body {
     transform: scale(2);
   }
 }
-@media screen and (max-width: 500px) {
-  :root {
-    --card-height: 25rem;
-    --card-width: calc(var(--card-height) / 1.5);
-  }
-  .card__title {
-    padding: 0;
-    font-size: 2rem;
-  }
-  .hidden .card__description {
-    padding: 0.7rem;
-    font-size: small;
-  }
-  .hidden button {
-    margin: 1rem 0 0 10rem;
-  }
-  .event-heading h1 {
-    font-size: 3rem;
-  }
-}
-.carousel-status{
-  font-size: 0!important;
-}
-.reduced-opacity {
-  opacity: 0.7;
-}
-.card-bg-color{
-  background-color: #290169a5;
-}
+
 .popup {
   display: none;
   position: fixed;
@@ -258,3 +230,12 @@ body {
 }
 
 /* Rest of your popup styles go here */
+.card-bg-color{
+  background-color: rgba(17, 0, 37, 0.595);
+}
+.dark-modal-bg {
+  background-color: #333; /* Set your desired dark background color */
+  color: #fff; /* Set text color for dark theme */
+  padding: 20px;
+  border-radius: 5px;
+}

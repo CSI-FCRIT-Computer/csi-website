@@ -1,58 +1,39 @@
 import React, { useState } from 'react';
-import { FaCalendar, FaLocationDot } from 'react-icons/fa6';
+import { Button, Modal } from 'react-bootstrap';
 
 const Card = ({ image, title, content, location, date, time }) => {
-  const iconStyle = {
-    color: '#D83F31',
-    marginRight: '.7rem',
-  };
-
-  const [isPopupVisible, setPopupVisible] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   const togglePopup = () => {
-    setPopupVisible(!isPopupVisible);
+    setShowPopup(!showPopup);
   };
 
   return (
-    <div className="card__body">
-      <div>
-        <div className="card__img">
-          <img src={image} alt={title} onClick={togglePopup} style={{ cursor: 'pointer' }} />
-        </div>
-        <div className="hidden">
-          <div className="card__title">{title}</div>
-          <div className="card__description">
-            <p>{content}</p>
-          </div>
-          <div className="card__ldt">
-            <div className="card__description">
-              <FaLocationDot style={iconStyle} />
-              {location}
-            </div>
-            <div className="card__description">
-              <FaCalendar style={iconStyle} />
-              {date} {time}
-            </div>
-            <button>MORE</button>
-          </div>
-        </div>
+    <div className="col-lg-4 col-md-6 col-12 mb-4 "  style={{ maxWidth: '420px' }}>
+      <div className="card card-bg-color" onClick={togglePopup}>
+        <img src={image} className="card-img-top" alt={title} />
       </div>
-
-      {isPopupVisible && (
-        <div className="popup" id="popup1">
-          <div className="overlay">
-            <div className="content">
-              <div className="close-btn" onClick={togglePopup}>
-                &times;
-              </div>
-              <h1>Title</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis similique culpa dicta, nihil enim eligendi non, repellendus, sint sunt iure numquam! Rem pariatur totam ut, eos placeat voluptas illum a.
-              </p>
-            </div>
-          </div>
+      <Modal show={showPopup} onHide={togglePopup} centered>
+        <div className="dark-modal-bg"> {/* Apply dark background to the modal */}
+          <Modal.Header closeButton>
+            <Modal.Title>{title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <p>{content}</p>
+            <p>
+              <strong>Location:</strong> {location}
+            </p>
+            <p>
+              <strong>Date and Time:</strong> {date} {time}
+            </p>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={togglePopup}>
+              Close
+            </Button>
+          </Modal.Footer>
         </div>
-      )}
+      </Modal>
     </div>
   );
 };
