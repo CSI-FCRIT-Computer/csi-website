@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Homepage.css";
-
+import bg from "./csi-homepage.jpg"
 function Homepage() {
   const [content, setContent] = useState(0);
   const [transform, setTransform] = useState(
@@ -21,7 +21,7 @@ function Homepage() {
     <div className="homepage">
       <img
         className="homepage_background"
-        src={require("./csi-homepage.jpg")}
+        src={bg}
         alt="background-img"
         style={{ transform: transform }}
       />
