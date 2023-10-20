@@ -1,19 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+* {
+  position: relative;
+}
+tsparticles {
+  z-index: -111111;
+}
 .homepage_background {
+  /* border: 2px solid red; */
+  /* position: absolute;
+  left: 50%;
+  top: 50%; */
+  display: block;
   position: absolute;
   z-index: -100;
-  width: 152vmax;
-  height: 152vmax;
-  transition: transform 3000ms ease;
+  width: 100vw;
+  height: 100vw;
+  transition: left 3s ease-in-out, top 3s ease-in-out;
+  animation: rotate 24s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
 }
 
 /* Landing View */
 
 .landing {
-  width: 32vw;
+  width: 60vw;
   min-width: 300px;
   text-align: center;
   position: absolute;
@@ -21,12 +40,15 @@
   right: 0;
   margin-inline: auto;
   top: 8.5vmax;
-  /* visibility: visible; */
-  animation: inAnimation 2000ms ease-in-out;
+  animation: inAnimation 3.5s ease-in-out;
+  /* visibility: visible;
+  opacity: 1; */
+  /* border: 2px solid red; */
 }
 
 .landing__title {
   font-size: 60px;
+  /* animation: title 1.5s ease-in-out; */
 }
 
 .landing__subtitle {
@@ -51,15 +73,37 @@
   color: #26b0e3;
 }
 
+.title {
+  width: 100vw;
+  color: #d6d6d6;
+  position: absolute;
+  top: 2vmax;
+  text-align: center;
+  font-size: 60px;
+  /* border: 2px solid red; */
+}
+.ani_title {
+  animation: title 1.5s ease-in-out;
+}
+@keyframes title {
+  0% {
+    top: 8.5vmax;
+    opacity: 0;
+  }
+  100% {
+    top: 2vmax;
+    opacity: 1;
+  }
+}
 /* About Us */
 .about {
-  width: 32vw;
+  max-width: 32vw;
   min-width: 300px;
   position: absolute;
-  top: 8.5vw;
-  right: 3.5vw;
+  top: 12vw;
+  right: 4vw;
   /* display: none; */
-  animation: inAnimation 2000ms ease-in-out;
+  animation: inAnimation 3.5s ease-in-out;
 }
 
 .about__title {
@@ -81,13 +125,12 @@
 .slide3 {
   width: 32vw;
   min-width: 300px;
-  width: 32vw;
   max-width: 50vw;
   position: absolute;
-  left: 5vw;
-  top: 22vw;
+  margin-left: 5vw;
+  top: 20vw;
   /* display: none; */
-  animation: inAnimation 2000ms ease-in-out;
+  animation: inAnimation 3.5s ease-in-out;
 }
 
 .slide3__button {
@@ -109,5 +152,35 @@
   100% {
     opacity: 1;
     visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .homepage_background {
+    height: 120vmax;
+    width: 120vmax;
+    top: 40vmax !important;
+  }
+  .landing {
+    width: 100vw;
+    top: 25vmax;
+    /* animation: title 3.5s 1 ease-in-out; */
+  }
+  .about {
+    top: 40vw;
+  }
+  .slide3 {
+    top: 50vw;
+  }
+  .title {
+    top: 10vmax;
+  }
+  @keyframes title {
+    0% {
+      top: 25vmax;
+    }
+    100% {
+      top: 10vmax;
+    }
   }
 }

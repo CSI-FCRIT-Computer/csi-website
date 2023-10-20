@@ -6,6 +6,8 @@ import AboutUs from "./components/aboutUsPage/AboutUs";
 import Sponsors from "./components/sponsorsPage/Sponsors";
 import ContactUs from "./components/contactUsPage/ContactUs";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Starbg from "./components/homepage/Starbg";
+
 
 export default function App() {
   return (
@@ -20,6 +22,10 @@ export default function App() {
           <Route path="/ContactUs" element={<ContactUs />} />
           </Routes>
       </Router>
+//       <Navbar />
+//       <Homepage />
+//       <Starbg />
+
     </div>
   );
 }
