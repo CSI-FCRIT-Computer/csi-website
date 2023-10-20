@@ -1,14 +1,31 @@
 import "./styles.css";
 import Homepage from "./components/homepage/Homepage";
 import Navbar from "./components/homepage/Navbar";
+import Events from "./components/eventsPage/Events";
+import AboutUs from "./components/aboutUsPage/AboutUs";
+import Sponsors from "./components/sponsorsPage/Sponsors";
+import ContactUs from "./components/contactUsPage/ContactUs";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Starbg from "./components/homepage/Starbg";
+
 
 export default function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Homepage />
-      <Starbg />
+      <Router>
+        <Navbar />
+          <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/Events" element={<Events />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/Sponsors" element={<Sponsors />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
+          </Routes>
+      </Router>
+//       <Navbar />
+//       <Homepage />
+//       <Starbg />
+
     </div>
   );
 }

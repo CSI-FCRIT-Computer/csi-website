@@ -1,31 +1,20 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 import "./Navbar.css";
 
 function Navbar() {
   return (
-    <>
-      <input type="radio" id="ham" name="sidebar" />
-      <label className="ham buttons" for="ham">
-        <i className="fas fa-bars"></i>
-      </label>
-
-      <div className="navbar">
-        <span className="navbar__brand">
-          <input type="radio" id="close" name="sidebar" />
-          <label className="close buttons" for="close">
-            <i className="fas fa-times"></i>
-          </label>
-          LOGO
-        </span>
-        <ul className="navbar__links" type="none">
-          <li>HOME</li>
-          <li>ABOUT US</li>
-          <li> EVENTS</li>
-          <li>SPONSORS</li>
-          <li>CONTACT US</li>
-        </ul>
-      </div>
-    </>
+    <div className="navbar">
+      <span className="navbar__brand">LOGO</span>
+      <ul className="navbar__links" type="none">
+        <Link to="/" className="no-underline"><li>HOME</li></Link>
+        <Link to="/AboutUs" className="no-underline"><li>ABOUT US</li></Link>
+        <Link to="/Events" className="no-underline"><li>EVENTS</li></Link>
+        <Link to="/Sponsors" className="no-underline"><li>SPONSORS</li></Link>
+        <Link to="/ContactUs" className="no-underline"><li>CONTACT US</li></Link>
+      </ul>
+    </div>
   );
 }
 
