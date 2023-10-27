@@ -18,4 +18,4 @@ function Mobcard(props) {
   )
 }
 
-export default Mobcard
+export default Mobcard;

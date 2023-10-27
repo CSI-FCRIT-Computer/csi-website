@@ -18,9 +18,9 @@ const UpcomingEventCard = ({ image, title, content, location, date, time }) => {
               <p className="card-text">
                 <strong>Date and Time:</strong> {date} {time}
               </p>
-              <a href="#" className="btn btn-primary">
+              <i className="btn btn-primary"> 
                 Go somewhere
-              </a>
+               </i>
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ body{
     align-items: center;
     min-height: 100vh;    
     background: #000000;
-    background-image: url(csi-homepage2.png);
+    /* background-image: url(csi-homepage2.png); */
 }
 .heading{
     /* border: 2px solid red; */
