@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./Homepage.css";
-import bg from 'csi-homepage2.png'
+import bg from './csi-homepage2.png'
+import React from 'react'
 
-function Homepage() {
+const Homepage=()=> {
   const [content, setContent] = useState(0);
   const [ltransform, setLTransform] = useState("0vmax");
   const [tshift, setTshift] = useState("20vmax");
@@ -35,7 +36,7 @@ function Homepage() {
   return (
     <div className="homepage">
       <img
-        src="{bg}"
+        src={bg}
         className="homepage_background"
         alt="background-img"
         style={{ left: ltransform, top: tshift }}
