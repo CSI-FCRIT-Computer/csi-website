@@ -1,6 +1,7 @@
+// eslint - disable - next - line
 import React from "react";
 import "./event.css";
-import MyCarousel from "./Carousel";
+// import MyCarousel from "./Carousel";
 import MajorEventCard from "./majorEvent";
 import UpcomingEventCard from "./upcoming";
 import Card from "./Card";
