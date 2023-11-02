@@ -89,16 +89,29 @@ const CanvasBackground = () => {
       }
     };
 
+    const handleMouseDown = () => {
+      mouseDown = true;
+    };
+
+    const handleMouseUp = () => {
+      mouseDown = false;
+    };
+
+    const handleTouchStart = () => {
+      mouseDown = true;
+    };
+
+    const handleTouchEnd = () => {
+      mouseDown = false;
+    };
+
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    window.addEventListener('mousedown', () => {
-      mouseDown = true;
-    });
-
-    window.addEventListener('mouseup', () => {
-      mouseDown = false;
-    });
+    window.addEventListener('mousedown', handleMouseDown);
+    window.addEventListener('mouseup', handleMouseUp);
+    canvas.addEventListener('touchstart', handleTouchStart, { passive: false });
+    canvas.addEventListener('touchend', handleTouchEnd, { passive: false });
 
     window.addEventListener('resize', () => {
       canvas.width = window.innerWidth;
@@ -115,4 +128,5 @@ const CanvasBackground = () => {
 };
 
 export default CanvasBackground;
+
 
