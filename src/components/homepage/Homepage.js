@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Homepage.css";
 import bg from './csi-homepage2.png'
 import React from 'react'
-
+import { Link } from "react-router-dom";
 const Homepage=()=> {
   const [content, setContent] = useState(0);
   const [ltransform, setLTransform] = useState("0vmax");
@@ -45,11 +45,12 @@ const Homepage=()=> {
       {/* Landing View */}
       {content === 0 /*|| content === 1 || content === 2*/ && (
         <section className="landing">
-          <h1 className="landing__title">CSI</h1>
+          <h1 className="landing__title">Computer Society Of India</h1>
           <h2 className="landing__subtitle">
-            Department of <br />
+            Department of <br/>
             Computer Engineering
           </h2>
+          <h3>Fr. Conceicao Rodrigues Institute of Technology </h3><br/>
           <button
             onClick={() => {
               setContent(1);
@@ -66,29 +67,41 @@ const Homepage=()=> {
       {/* About Us */}
       {content === 1 && (
         <>
-          <h1 className="title ani_title">CSI</h1>
+          <h2 className="title ani_title">CSI FCRIT</h2>
           <section className="about">
             {/* <h1 className="title">CSI</h1> */}
             <h1 className="about__title">ABOUT US</h1>
             <p className="about__content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              CSI FCRIT COUNCIL UNDER THE CSI CHAPTER of India 
+              aims to create a platform for students to enhance their knowledge and skills in the field of
+              computer science. The chapter fosters a sense of partnership among its members,
+              encouraging collaboration and networking. In addition to organizing various engaging activities at the college's
+              chapter and student branches, the CSI also conducts periodic seminars and events to keep students updated with the
+              latest advancements in technology and provide them with a platform to learn and grow.
+              CSI has organised many major events till now with  participation of over 500 students.
+              
             </p>
-            <p
+          
+            <button
               onClick={() => {
                 setContent(2);
                 renderContent1();
                 renderContent2();
               }}
-              className="about__link"
+              className="slide3__button"
             >
-              CONTACT US
-            </p>
+              CSI Chapter
+            </button>
+            <Link to="/Events" className="no-underline">
+              <button
+                
+                className="slide3__button"
+              >
+                Check Our Events
+              </button>
+
+            </Link>
+            
           </section>
         </>
       )}
@@ -96,18 +109,18 @@ const Homepage=()=> {
       {/* Slide 3 */}
       {content === 2 && (
         <>
-          <h1 className="title anti_ani">CSI</h1>
+          <h2 className="title anti_ani">CSI Chapter</h2>
           <section className="slide3">
             {/* <h1 className="title">CSI</h1> */}
-            <h1 className="about__title">Lorem Ipsum</h1>
+            <h1 className="about__title">Computer Society of India</h1>
             <p className="about__content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              The seed for the Computer Society of India (CSI) was first shown in the year 1965
+              with a handful of IT enthusiasts who were a computer user group and felt the need to
+              organize tteir activities. They also wanted to share their knowledge and exchange ideas on
+              what they felt was a fast emerging sector. Today the CSI takes pride in being the largest and
+              most professionally managed association of and for IT professionals in India. The purposes of the
+              Society are scientific and educational directed
+              towards the advancement of the theory and practice of computer science and IT.
             </p>
             <button
               onClick={() => {
@@ -119,6 +132,15 @@ const Homepage=()=> {
             >
               HOMEPAGE
             </button>
+            <Link to="/Team" className="no-underline">
+              <button
+
+                className="slide3__button"
+              >
+                Meet Our Team
+              </button>
+
+            </Link>
           </section>
         </>
       )}

@@ -1,6 +1,13 @@
 import React from 'react';
+import { useState } from 'react';
+import { Button, Modal } from 'react-bootstrap';
 
 const UpcomingEventCard = ({ image, title, content, location, date, time }) => {
+
+  const togglePopup = () => {
+    alert("Further Details will be uploaded soon!");
+  };
+
   return (
     <>
       <div className="card text-white my-3 card-bg-color mx-auto" style={{ maxWidth: 1100 }}>
@@ -18,9 +25,10 @@ const UpcomingEventCard = ({ image, title, content, location, date, time }) => {
               <p className="card-text">
                 <strong>Date and Time:</strong> {date} {time}
               </p>
-              <i className="btn btn-primary"> 
-                Go somewhere
-               </i>
+              <i className="btn btn-primary" onClick={togglePopup}> 
+                More Details
+              </i>
+           
             </div>
           </div>
         </div>
