@@ -29,8 +29,9 @@
     "slick-carousel": "^1.8.1",
     "swiper": "^11.0.3",
     "tailwindcss": "3.2.7",
+    "three": "^0.158.0",
     "uuid": "^9.0.1",
-    "three": "^0.158.0"
+    "webgl-sdf-generator": "^1.1.1"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",

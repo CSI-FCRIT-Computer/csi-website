@@ -3,7 +3,6 @@ import React from 'react'
 import Homepage from "./components/homepage/Homepage";
 import Navbar from "./components/homepage/Navbar";
 import Events from "./components/eventsPage/Events";
-import Sponsors from "./components/sponsorsPage/Sponsors";
 import ContactUs from "./components/contactUsPage/ContactUs";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Starbg from "./components/homepage/Starbg";
