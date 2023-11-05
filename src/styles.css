@@ -30,3 +30,10 @@ h2 {
 p {
   font-size: 16px;
 } */
+html {
+  --cursor-color: #fff
+}
+
+html.dark-mode {
+  --cursor-color: #fff
+}

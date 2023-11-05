@@ -8,15 +8,31 @@ import Sponsors from "./components/sponsorsPage/Sponsors";
 import ContactUs from "./components/contactUsPage/ContactUs";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Starbg from "./components/homepage/Starbg";
-
+import AnimatedCursor from "react-animated-cursor";
 
 export default function App() {
   return (
     <div className="App">
+      
       <BrowserRouter>
         <Navbar />
-        {/* <Navbar /> */}
-        {/* <Homepage /> */}
+<AnimatedCursor
+  innerSize={8}
+  outerSize={35}
+  innerScale={1}
+  outerScale={2}
+  outerAlpha={0}
+  hasBlendMode={true}
+  innerStyle={{
+    zIndex: 9999, // set the z-index value
+    backgroundColor: 'var(--cursor-color)'
+  }}
+  outerStyle={{
+    zIndex: 9999, // set the z-index value
+    border: '3px solid var(--cursor-color)'
+  }}
+/>
+
         <Starbg />
           <Routes>
           <Route path="/" element={<Homepage />} />
