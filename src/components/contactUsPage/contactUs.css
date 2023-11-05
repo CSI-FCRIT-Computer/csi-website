@@ -1,0 +1,19 @@
+.containercontactus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contactus {
+    margin-top: 20px;
+    /* display: flex; */
+    justify-content: center;
+  }
+
+  
+
+  /* @media (min-width: 1200px) {
+    iframe{
+        max-width:1000vw;
+    }
+  } */
