@@ -8,6 +8,9 @@
 tsparticles {
   z-index: -111111;
 }
+.homepage{
+  animation: inAnimation 2.5s ease-in-out;
+}
 .homepage_background {
   /* border: 2px solid red; */
   /* position: absolute;
