@@ -39,7 +39,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "CSI Team",
           from_email: form.email,
-          to_email: "csi.info@gmail.com",
+          to_email: "info.csi.fcrit@gmail.com",
           message: form.message,
         },
         process.env.EMAILJS_PUBLIC_KEY
