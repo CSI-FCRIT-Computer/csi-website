@@ -9,7 +9,7 @@ const Card = ({ image, title, content, location, date, time }) => {
   };
 
   return (
-    <div className="col-lg-4 col-md-6 col-12 mb-4 "  style={{ maxWidth: '420px' }}>
+    <div>
       <div className="card card-bg-color" onClick={togglePopup}>
         <img src={image} className="card-img-top" alt={title} />
       </div>

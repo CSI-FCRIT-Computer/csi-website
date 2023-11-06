@@ -3,6 +3,7 @@
 @tailwind utilities;
 * {
   position: relative;
+  color: #ffffff;
 }
 tsparticles {
   z-index: -111111;
@@ -39,7 +40,7 @@ tsparticles {
   left: 0;
   right: 0;
   margin-inline: auto;
-  top: 8.5vmax;
+  top: 6.7vmax;
   animation: inAnimation 3.5s ease-in-out;
   /* visibility: visible;
   opacity: 1; */
@@ -112,6 +113,7 @@ tsparticles {
 
 .about__content {
   font-size: 16px;
+  text-align: justify;
 }
 
 .about__link {
@@ -125,12 +127,18 @@ tsparticles {
 .slide3 {
   width: 32vw;
   min-width: 300px;
-  max-width: 50vw;
+  /* max-width: 50vw; */
   position: absolute;
   margin-left: 5vw;
-  top: 20vw;
+  top: 23vh;
   /* display: none; */
   animation: inAnimation 3.5s ease-in-out;
+}
+@media (max-width:950px) {
+  .slide3{
+    width:40vw;
+  }
+  
 }
 
 .slide3__button {
@@ -142,7 +150,13 @@ tsparticles {
   border: 1px solid #ffffff;
   border-radius: 20px;
   cursor: pointer;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
 }
+.slide3__button:hover{
+  background-color: #ffffff;
+    color: #26b0e3;
+} 
 
 @keyframes inAnimation {
   0% {
@@ -170,7 +184,7 @@ tsparticles {
     top: 40vw;
   }
   .slide3 {
-    top: 50vw;
+    top: 35vh;
   }
   .title {
     top: 10vmax;

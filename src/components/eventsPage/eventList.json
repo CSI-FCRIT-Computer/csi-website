@@ -1,7 +1,7 @@
 [
     {
       "id":"1",
-      "img": "/assets/event/sample.jpeg",
+      "img": "/assets/event/1.jpg",
       "title": "Event 1",
       "content": "Lorem ipsum is a placeholder or dummy text used in graphic design and typesetting. It's often used to preview layouts and emphasize the design over the content. The primary purpose of Lorem ipsum is to create text that doesn't distract from the overall layout and visual hierarchy.",
       "location": "116, New Building",
@@ -12,7 +12,7 @@
     },
     {
       "id":"2",
-      "img": "/assets/event/sample.jpeg",
+      "img": "/assets/event/2.jpg",
       "title": "Event 2 ",
       "content": "Lorem ipsum is a placeholder or dummy text used in graphic design and typesetting. It's often used to preview layouts and emphasize the design over the content. The primary purpose of Lorem ipsum is to create text that doesn't distract from the overall layout and visual hierarchy.",
       "location": "116, New Building",
@@ -23,8 +23,8 @@
     },
     {
       "id":"3",
-      "img": "/assets/event/sample.jpeg",
-      "title": "Event 3",
+      "img": "/assets/event/3.jpg",
+      "title": "Event-3",
       "content": "Lorem ipsum is a placeholder or dummy text used in graphic design and typesetting. It's often used to preview layouts and emphasize the design over the content. The primary purpose of Lorem ipsum is to create text that doesn't distract from the overall layout and visual hierarchy.",
       "location": "116, New Building",
       "date": "25-9-2023",
@@ -34,8 +34,8 @@
     },
     {
       "id":"4",
-      "img": "/assets/event/sample.jpeg",
-      "title": "Event 4",
+      "img": "/assets/event/4.jpg",
+      "title": "Event-4",
       "content": "Lorem ipsum is a placeholder or dummy text used in graphic design and typesetting. It's often used to preview layouts and emphasize the design over the content. The primary purpose of Lorem ipsum is to create text that doesn't distract from the overall layout and visual hierarchy.",
       "location": "116, New Building",
       "date": "25-9-2023",
@@ -45,8 +45,8 @@
     },
     {
       "id":"7",
-      "img": "/assets/event/sample.jpeg",
-      "title": "Event 7",
+      "img": "/assets/event/7.jpg",
+      "title": "Event-7",
       "content": "Lorem ipsum is a placeholder or dummy text used in graphic design and typesetting. It's often used to preview layouts and emphasize the design over the content. The primary purpose of Lorem ipsum is to create text that doesn't distract from the overall layout and visual hierarchy.",
       "location": "116, New Building",
       "date": "25-9-2023",
@@ -56,8 +56,8 @@
     },
     {
       "id":"8",
-      "img": "/assets/event/sample.jpeg",
-      "title": "Event 8",
+      "img": "/assets/event/6.jpg",
+      "title": "Event-8",
       "content": "Lorem ipsum is a placeholder or dummy text used in graphic design and typesetting. It's often used to preview layouts and emphasize the design over the content. The primary purpose of Lorem ipsum is to create text that doesn't distract from the overall layout and visual hierarchy.",
       "location": "116, New Building",
       "date": "25-9-2023",
