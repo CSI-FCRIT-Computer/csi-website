@@ -25,7 +25,9 @@ export default function App() {
 
   return (
     <div className="App">
-      {isLoading &&(
+      {isLoading ? (
+          <Loader/>
+        ) : (
         <div>
       <BrowserRouter>
         <Navbar />
