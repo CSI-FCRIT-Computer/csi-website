@@ -11,7 +11,18 @@
   }
 
   
+.contactus iframe{
+  max-width: 90vw;
+}
 
+
+.sk-instagram-feed{
+  background-color:transparent !important;
+}
+.sk-ig-post-img{
+  width: 33vw !important;
+  height: 33vw !important;
+}
   /* @media (min-width: 1200px) {
     iframe{
         max-width:1000vw;

@@ -23,13 +23,18 @@
   padding: 30px 40px;
   /* border: 2px solid red; */
 }
-
+.navbar .logo{
+  height: 13vh;
+  left: 10vw;
+}
 .navbar__links {
   display: flex;
   /* flex-wrap: wrap; */
-  gap: 40px;
+  gap: 3vw;
   font-size: 14px;
   padding: 30px 40px;
+  top: 2vh;
+  left: 7vw;
   /* border: 2px solid red; */
 }
 

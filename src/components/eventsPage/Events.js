@@ -14,7 +14,7 @@ function Events() {
     <div className="events">
       <section>
         <div className="container ">
-          <h1 className="heading">Forthcoming Events</h1>
+          <h1 className="heading">Forthcoming Event</h1>
         </div>
         <div className="upcoming-events ">
         {upcoming.map((card) => (
