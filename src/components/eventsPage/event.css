@@ -33,6 +33,10 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+.dark-modal-bg p{
+text-align: justify;
+z-index: 10;
+}
 
 .overlay {
   position: fixed;
@@ -136,7 +140,7 @@ body {
 }
 
 .swiper .container {
-  max-width: 124rem;
+  max-width: 90vw;
   padding: 4rem 1rem;
   margin: 0 auto;
 }

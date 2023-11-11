@@ -5,7 +5,7 @@ const Loader = () => {
 
   return (
     <div className="dark-background">
-    <Starbg />
+      <Starbg />
       <div className="loader">
         <div id="universe">
           <div id="galaxy">
