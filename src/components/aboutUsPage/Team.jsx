@@ -7,6 +7,8 @@ import li from "./images/linkedin.png"
 import twit from "./images/twitter.png" 
 import git from "./images/github.png" 
 import { Link } from 'react-router-dom';
+import Footer from '../Footer.js';
+
 
 function AboutUs() {
 
@@ -16,6 +18,7 @@ function AboutUs() {
 
 
   return (
+    <>
     <div className="team-main">
       <h1> CSI COUNCIL 2023-24</h1>
       {/* <div className="container row"> */}
@@ -77,6 +80,8 @@ function AboutUs() {
       
 
     </div>
+    <Footer/>
+    </>
   )
 }
 

@@ -8,6 +8,9 @@
 tsparticles {
   z-index: -111111;
 }
+/* body {
+  overflow-y: auto;
+} */
 .homepage{
   animation: inAnimation 2.5s ease-in-out;
 }

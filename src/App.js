@@ -19,14 +19,16 @@ export default function App() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(true);
+      setIsLoading(false);
     }, 5000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="App">
-      {isLoading &&(
+      {isLoading ? (
+          <Loader/>
+        ) : (
         <div>
       <BrowserRouter>
         <Navbar />

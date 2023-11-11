@@ -6,11 +6,13 @@ import Card from "./Card";
 import eventList from "./eventList.json";
 import { Link } from 'react-router-dom';
 import Swiper  from "./Swiper";
+import Footer from "../Footer";
 
 function Events() {
   const upcoming = eventList.filter((card) => card.type === "upcoming");
   
   return (
+    <>
     <div className="events">
       <section>
         <div className="container ">
@@ -42,7 +44,10 @@ function Events() {
       {/* <MyCarousel /> */}
         {/* <SpringCarousel /> */}
       </section>
+
       </div>
+      <Footer/>
+      </>
     
   );
 }
