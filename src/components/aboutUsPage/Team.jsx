@@ -7,6 +7,8 @@ import li from "./images/linkedin.png"
 import twit from "./images/twitter.png" 
 import git from "./images/github.png" 
 import { Link } from 'react-router-dom';
+import Footer from '../Footer.js';
+
 
 function AboutUs() {
 
