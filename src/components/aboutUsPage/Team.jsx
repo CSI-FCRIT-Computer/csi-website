@@ -16,6 +16,7 @@ function AboutUs() {
 
 
   return (
+    <>
     <div className="team-main">
       <h1> CSI COUNCIL 2023-24</h1>
       <div className="container row">
@@ -48,6 +49,8 @@ function AboutUs() {
       
 
     </div>
+    <Footer/>
+    </>
   )
 }
 

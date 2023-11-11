@@ -1,6 +1,7 @@
 import React from 'react'
 import './contactUs.css';
 import Contact from './Contact.jsx';
+import Footer from '../Footer.js';
 function ContactUs() {
   return (
     <>
@@ -15,6 +16,7 @@ function ContactUs() {
       </div>    
     </div>
     <Contact/>
+    <Footer/>
     </>
   )
 }
