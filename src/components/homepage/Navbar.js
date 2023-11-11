@@ -7,7 +7,8 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <div className="navbar">
-      <img src={logo} alt="logo"  className="logo"/>
+      <Link to="/" className="no-underline">
+        <img src={logo} alt="logo" className="logo" /></Link>
       <ul className="navbar__links" type="none">
         <Link to="/" className="no-underline"><li>HOME</li></Link>
         <Link to="/Team" className="no-underline"><li>OUR TEAM</li></Link>

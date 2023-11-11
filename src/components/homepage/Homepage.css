@@ -23,6 +23,7 @@ tsparticles {
   height: 100vw;
   transition: left 3s ease-in-out, top 3s ease-in-out;
   animation: rotate 24s infinite linear;
+
 }
 @keyframes rotate {
   0% {
@@ -174,7 +175,7 @@ tsparticles {
 
 @media only screen and (max-width: 725px) {
   .homepage_background {
-    height: 120vmax;
+    /* height: 120vmax; */
     width: 120vmax;
     top: 40vmax !important;
   }
