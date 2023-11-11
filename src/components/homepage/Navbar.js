@@ -6,7 +6,7 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <Link to="/" className="no-underline">
         <img src={logo} alt="logo" className="logo" /></Link>
       <ul className="navbar__links" type="none">
@@ -15,8 +15,11 @@ function Navbar() {
         <Link to="/Events" className="no-underline"><li>EVENTS</li></Link>
         <Link to="/ContactUs" className="no-underline"><li>CONTACT US</li></Link>
       </ul>
-    </div>
+    </nav>
   );
 }
 
 export default Navbar;
+
+
+

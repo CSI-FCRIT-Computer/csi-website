@@ -1,5 +1,5 @@
 import nimisha from "./images/Nimisha.png";
-import jayesh from "./images/Jayesh1.jpg";
+import jayesh from "./images/Jayesh.jpg";
 import rohit from "./images/Rohit.jpeg";
 import savio from "./images/SavioDias.jpg";
 import saketh from "./images/Sakethreddy.jpeg";
@@ -14,6 +14,26 @@ import tanishka from "./images/Tanishka.jpg";
 const TeamDetails = [
     {
         "id": 1,
+        "img": "",
+        "name": "Dr. Chhaya Pawar",
+        "post": "Faculty Coordinator",
+        "ig": "",
+        "linkedin": "",
+        "git": "",
+        "twit": ""
+    },
+    {
+        "id": 2,
+        "img": "",
+        "name": "Ms. Snehal Nikalje",
+        "post": "Faculty Coordinator",
+        "ig": "",
+        "linkedin": "",
+        "git": "",
+        "twit": ""
+    },
+    {
+        "id": 3,
         "img": nimisha,
         "name": "Nimisha Gharat",
         "post": "President",
@@ -23,7 +43,7 @@ const TeamDetails = [
         "twit": ""
     },
     {
-        "id": 2,
+        "id": 4,
         "img": jayesh,
         "name": "Jayesh Chaudhari",
         "post": "Vice President",
@@ -33,26 +53,26 @@ const TeamDetails = [
         "twit": ""
     },
     {
-        "id": 3,
+        "id": 5,
         "img": rohit,
         "name": "Rohit Kumar Paturi",
-        "post": "Operation Secretary",
+        "post": "Operational Secretary",
         "ig": "https://instagram.com/itz_perkypaturi",
         "linkedin": "https://www.linkedin.com/in/rohit-kumar-paturi-90806b20a/",
         "git": "https://github.com/itz-perkypaturi",
         "twit": "https://twitter.com/itz_perkypaturi"
     },
     {
-        "id": 4,
+        "id": 6,
         "img": savio,
         "name": "Savio Dias",
-        "post": "Tech Head",
+        "post": "Technical Head",
         "ig": "https://www.instagram.com/ssviox.629/",
         "linkedin": "https://www.linkedin.com/in/savio-dias-984b45198/",
         "git": "https://github.com/Savio629",
         "twit": "https://twitter.com/Savio_dias629"
     }, {
-        "id": 5,
+        "id": 7,
         "img": alex,
         "name": "Alex Tharian",
         "post": "Treasurer",
@@ -62,7 +82,7 @@ const TeamDetails = [
         "twit": ""
     },
     {
-        "id": 6,
+        "id": 8,
         "img": suhani,
         "name": "Suhani Bhuti",
         "post": "Creative Head",
@@ -72,7 +92,7 @@ const TeamDetails = [
         "twit": ""
     },
     {
-        "id": 7,
+        "id": 9,
         "img": tanishka,
         "name": "Tanishka Sonar",
         "post": "Creative Coordinator",
@@ -80,17 +100,9 @@ const TeamDetails = [
         "linkedin": "http://www.linkedin.com/in/tanishka-sonar-73a35a233",
         "git": "https://github.com/tanishkasonar22",
         "twit": ""
-    }, {
-        "id": "",
-        "img": "",
-        "name": "",
-        "post": "",
-        "ig": "",
-        "linkedin": "",
-        "git": ""
     },
     {
-        "id": 8,
+        "id": 10,
         "img": saketh,
         "name": "Saketh Reddy",
         "post": "PR Head",
@@ -100,7 +112,7 @@ const TeamDetails = [
         "twit": ""
     },
     {
-        "id": 9,
+        "id": 11,
         "img": koustubh,
         "name": "Koustubh Yadavalli",
         "post": "Sponsorship Head",
@@ -110,7 +122,7 @@ const TeamDetails = [
         "twit": ""
     },
     {
-        "id": 10,
+        "id": 12,
         "img": joevita,
         "name": "Joevita Jose",
         "post": "Documentation Head",
@@ -120,30 +132,10 @@ const TeamDetails = [
         "twit": ""
     },
     {
-        "id": 11,
+        "id": 13,
         "img": aaron,
         "name": "Aaron George",
-        "post": "Tech Coordinator",
-        "ig": "#",
-        "linkedin": "#",
-        "git": "#",
-        "twit": "#"
-    },
-    {
-        "id": 12,
-        "img": sagar,
-        "name": "Sagar Shukla",
-        "post": "Tech Coordinator",
-        "ig": "https://www.instagram.com/sagar201003/",
-        "linkedin": "https://www.linkedin.com/in/sagar-shukla-33b409249/",
-        "git": "https://github.com/Sagar201003",
-        "twit": "#"
-    },
-    {
-        "id": 13,
-        "img": "./images/1.jpg",
-        "name": "Dr. Chhaya Pawar",
-        "post": "Faculty Coordinator",
+        "post": "Technical Coordinator",
         "ig": "#",
         "linkedin": "#",
         "git": "#",
@@ -151,14 +143,15 @@ const TeamDetails = [
     },
     {
         "id": 14,
-        "img": "./images/4.jpg",
-        "name": "Ms. Snehal Nikalje",
-        "post": "Faculty Coordinator",
-        "ig": "#",
-        "linkedin": "#",
-        "git": "#",
-        "twit": "#"
+        "img": sagar,
+        "name": "Sagar Shukla",
+        "post": "Technical Coordinator",
+        "ig": "https://www.instagram.com/sagar201003/",
+        "linkedin": "https://www.linkedin.com/in/sagar-shukla-33b409249/",
+        "git": "https://github.com/Sagar201003",
+        "twit": ""
     }
+   
 ]
 
 export default TeamDetails;
