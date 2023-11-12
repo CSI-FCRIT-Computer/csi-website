@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
-
  .team-main * {
     margin: 0;
     padding: 0;
@@ -208,17 +207,23 @@
 
 }
 .hex .socials{
+    opacity: 0;
+}
+.hex .socials{
+    width: 15vw;
     bottom: 25%;
     position: absolute;
-    display: inline;
 }
 
 .hex .socials a{
     width: 5vh;
-    height: 5vh;
+    height: 4vh;
     bottom: 25%;
 }
-
+.hex .social-img{
+    width: 4vh;
+    height: 4vh;
+}
 
 .img {
     position: absolute;
@@ -252,6 +257,79 @@
 .img:after {
     background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5), transparent);
 }
+.socials a:nth-child(1){
+    left: 5.5rem;
+}
+.socials a:nth-child(2) {
+    left: 7.5rem;
+}
+.socials a:nth-child(3) {
+    left: 9.5rem;
+}
+.socials a:nth-child(4) {
+    left: 11.5rem;
+}
+
+@media (max-width:700px) and (min-width:601px) {
+    .socials a:nth-child(1) {
+            left: 5.5rem;
+        }
+    
+        .socials a:nth-child(2) {
+            left: 7.5rem;
+        }
+    
+        .socials a:nth-child(3) {
+            left: 3.5rem;
+        }
+    
+        .socials a:nth-child(4) {
+            left: 9.5rem;
+        }
+}
+@media (max-width:500px)  and (min-width:351px){
+    
+    .socials a:nth-child(1) {
+        left: 5.5rem;
+    }
+
+    .socials a:nth-child(2) {
+        left: 7.5rem;
+    }
+
+    .socials a:nth-child(3) {
+        left: 3.5rem;
+    }
+
+    .socials a:nth-child(4) {
+        left: 9.5rem;
+    }
+    .social-img{
+        scale: 0.75;
+    }
+}
+@media (max-width:350px) {
+    .socials a:nth-child(1) {
+        left: 5.5rem;
+    }
+
+    .socials a:nth-child(2) {
+        left: 1.5rem;
+    }
+
+    .socials a:nth-child(3) {
+        left: 3.5rem;
+    }
+
+    .socials a:nth-child(4) {
+        left: 7.5rem;
+    }
+          .social-img {
+              scale: 0.75;
+          }
+}
+
+
 
 /*** HOVER EFFECT  **********************************************************************/
 
@@ -260,8 +338,8 @@
 .hexLink:hover h1,
 .hexLink:focus h1,
 .hexLink:hover p,
-.hexLink:hover a,
-.hexLink:focus a,
+.hexLink:hover .socials,
+.hexLink:focus .socials,
 .hexLink:focus p{
     opacity: 1;
     transition: 0.8s;
@@ -270,7 +348,7 @@
 
 .hexIn:hover .img:before,
 .hexIn:hover .img:after,
-.hexIn:hover a:after,
+.hexIn:hover .socials:after,
 .hexIn:hover .hexLink {
     opacity: 1;
 }

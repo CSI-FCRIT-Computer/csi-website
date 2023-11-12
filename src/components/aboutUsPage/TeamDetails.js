@@ -1,4 +1,4 @@
-import nimisha from "./images/Nimisha.png";
+import nimisha from "./images/Nimisha.jpg";
 import jayesh from "./images/Jayesh.jpg";
 import rohit from "./images/Rohit.jpeg";
 import savio from "./images/SavioDias.jpg";
@@ -6,7 +6,7 @@ import saketh from "./images/Sakethreddy.jpeg";
 import alex from "./images/alex.jpg";
 import koustubh from "./images/Kousthubh_Yadavalli.jpg";
 import sagar from "./images/Sagar_Shukla.jpg";
-import suhani from "./images/suhani.png";
+import suhani from "./images/suhani.jpg";
 import aaron from "./images/aaron.jpg";
 import joevita from "./images/joevita.jpeg";
 import tanishka from "./images/Tanishka.jpg";
