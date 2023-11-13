@@ -3,18 +3,24 @@
  .team-main * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .team-main {
+    top: 6vh;
   place-items: center; 
     background: transparent;
     animation: inAnimation 3.5s ease-in-out;
 } 
+.top-10vh{
+    top: 10vh;
+}
 .team-main h1{
     font-weight: 700;
-    padding: 2rem;
     text-align: center;
+   
+}
+.team-main .grid{
+    top:10vh;
 }
 /* .team-main .container {
     width: 100%;
@@ -100,7 +106,7 @@
     flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: hiddsen;
     font-family: sans-serif;
     list-style-type: none;
 }
@@ -177,6 +183,7 @@
     box-sizing: border-box;
     font-weight: 300;
     opacity: 0;
+    height: auto;
 }
 
 #demo1 {
@@ -287,7 +294,32 @@
             left: 9.5rem;
         }
 }
-@media (max-width:500px)  and (min-width:351px){
+@media (max-width:600px) and (min-width:501px){
+    .social-img {
+            scale: 0.6;
+        }
+                 .socials a:nth-child(1) {
+                     left: 5.5rem;
+                 }
+        
+                 .socials a:nth-child(2) {
+                     left: 7.5rem;
+                 }
+        
+                 .socials a:nth-child(3) {
+                     left: 3.5rem;
+                 }
+        
+                 .socials a:nth-child(4) {
+                     left: 9.5rem;
+                 }
+        
+                 .social-img {
+                     scale: 0.5;
+                 }
+       
+}
+@media (max-width:500px)  and (min-width:350px){
     
     .socials a:nth-child(1) {
         left: 5.5rem;
@@ -305,7 +337,7 @@
         left: 9.5rem;
     }
     .social-img{
-        scale: 0.75;
+        scale: 0.5;
     }
 }
 @media (max-width:350px) {
@@ -325,7 +357,7 @@
         left: 7.5rem;
     }
           .social-img {
-              scale: 0.75;
+              scale: 0.5;
           }
 }
 

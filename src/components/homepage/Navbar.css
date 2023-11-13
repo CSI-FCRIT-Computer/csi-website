@@ -3,20 +3,20 @@
 * {
   margin: 0;
   padding: 0;
-  z-index: 11;
+  z-index: 1;
 }
 .navbar {
+    position: fixed !important;
   display: flex;
-  position: fixed;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding-inline: 60px 120px;
-  height: 64px;
-  width: 90vw;
-  z-index: 4;
-  height: auto;
-  /* border: 2px solid blue; */
+  width: 100vw;
+  z-index: 4000;
+  height: 11vh;
+  border-bottom: 2px solid slategray;
+  background-color: black;
 
 }
 
@@ -28,17 +28,17 @@
   /* border: 2px solid red; */
 }
 .navbar .logo{
-  height: 13vh;
+  height: 8vh;
   left: 10vw;
+  top: -1.5vh;
 }
 .navbar__links {
   display: flex;
   /* flex-wrap: wrap; */
   gap: 3vw;
   font-size: 14px;
-  padding: 30px 40px;
-  top: 2vh;
-  left: 7vw;
+  padding: 20px 40px;
+  top: 0vh;
   /* border: 2px solid red; */
 }
 
@@ -51,35 +51,42 @@
   text-decoration: none;
   color: #fff;
 }
-.no-underline {
-  text-decoration: none;
-}
 
-.hamburger {
+
+.navbar span {
   display: none;
 }
 
 @media (max-width:550px) {
+  .navbar span{
+    display: block;
+  }
   .hamburger{
-  position: relative;
+  position: fixed;
     margin-right: 10vw;
+    right: 2vw;
     top: 2vh;
     font-size: 40px !important;
 
   }
+    nav.navbar.false{
+      background-color: black ;
+      height: 9vh;
+    }
     .navbar__links li {
-      width: 100%;
+      /* width: 100%; */
       margin-bottom: 20px;
       border-bottom: 2px solid;
     }
     .navbar__links{
       display: none;
     }
-    .logo{
+    .navbar .logo{
+      position: fixed;
       height: 5vh !important;
       width: 5vh;
       top:2vh;
-      position: fixed;
+      /* position: fixed; */
     }
     
   
@@ -88,7 +95,7 @@
       /* flex-wrap: wrap; */
       font-size: 14px;
       padding: 10px 20px 30px;
-      left: 0vw;
+      left: -35vw;
       top: 5vh;
       /* border: 2px solid red; */
     }
@@ -101,7 +108,6 @@
           flex-wrap: wrap;
           padding-inline: 60px 120px;
           width: 100vw;
-          z-index: 1;
           /* overflow: visible; */
           
           /* border: 2px solid blue; */
@@ -111,7 +117,7 @@
                 display: flex;
                 padding-bottom: 5vh;
                 height: auto;
-                 background-color: rgba(84, 84, 84, 0.623);
+                 background-color:black;
                 /* overflow: hidden; */
                 }
   

@@ -3,15 +3,16 @@ import { Link } from 'react-router-dom';
 import logo from './COMPUTERFCRIT.png';
 
 import "./Navbar.css";
+import { Style } from "paper/dist/paper-core";
 
 function Navbar() {
   const[active, setActive] = useState(false);
 
 
   return (
-    <nav className={`navbar ${active && ('active')}`}>
+    <nav className={`navbar ${active && ('active')}`} >
       {/* <div className="nav"> */}
-      <Link to="/" className="no-underline">
+      <Link to="/" >
         <img src={logo} alt="logo" className="logo" /></Link>
       <ul className="navbar__links" type="none">
         <Link to="/" className="no-underline"><li onClick={()=>(setActive(!active))}>HOME</li></Link>

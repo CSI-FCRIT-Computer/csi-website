@@ -9,8 +9,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Starbg from "./components/homepage/Starbg";
 import Team from './components/aboutUsPage/Team';
 import AnimatedCursor from "react-animated-cursor";
-// import "./components/Loader.scss";
-// import Loader from "./components/Loader";
+import { Loader } from "@react-three/drei";
+import "./components/Loader.scss";
+import Loader from "./components/Loader";
 
 
 export default function App() {
@@ -26,7 +27,7 @@ export default function App() {
 
   return (
     <div className="App">
-      {isLoading  &&(
+      {isLoading ?(<Loader />):(
         <div>
       <BrowserRouter>
         <Navbar />

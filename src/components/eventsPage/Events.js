@@ -38,7 +38,6 @@ function Events() {
         {/* <div className="container my-5 ">
           <h1>Previous Event</h1>
         </div> */}
-      <hr />
       <section>
       <Swiper />
       {/* <MyCarousel /> */}

@@ -13,6 +13,7 @@ tsparticles {
 } */
 .homepage{
   animation: inAnimation 2.5s ease-in-out;
+  top: 15vh;
 }
 .homepage_background {
   /* border: 2px solid red; */
