@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Homepage.css";
 import bg from './csi-homepage2.png'
 import React from 'react'
@@ -7,6 +7,25 @@ const Homepage=()=> {
   const [content, setContent] = useState(0);
   const [ltransform, setLTransform] = useState("0vmax");
   const [tshift, setTshift] = useState("20vmax");
+  const [isContentExpanded1, setIsContentExpanded1] = useState(
+    window.innerWidth > 750
+  );
+  const [isContentExpanded2, setIsContentExpanded2] = useState(
+    window.innerWidth > 750
+  );
+  // useEffect(() => {
+  //   // Check window width on mount and update isContentExpanded
+  //   const handleResize = () => {
+  //     setIsContentExpanded(window.innerWidth > 750);
+  //   };
+
+  //   window.addEventListener("resize", handleResize);
+
+  //   // Clean up event listener on component unmount
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   function renderContent1() {
     if (content === 2) {
@@ -32,7 +51,13 @@ const Homepage=()=> {
       setTshift("0vmax");
     }
   }
+  const toggleContent1 = () => {
+    setIsContentExpanded1(!isContentExpanded1);
+  };
 
+  const toggleContent2 = () => {
+    setIsContentExpanded2(!isContentExpanded2);
+  };
   return (
     <div className="homepage">
       <img
@@ -72,16 +97,15 @@ const Homepage=()=> {
             {/* <h1 className="title">CSI</h1> */}
             <h1 className="about__title">ABOUT US</h1>
             <p className="about__content">
-              CSI FCRIT COUNCIL UNDER THE CSI CHAPTER of India 
-              aims to create a platform for students to enhance their knowledge and skills in the field of
-              computer science. The chapter fosters a sense of partnership among its members,
-              encouraging collaboration and networking. In addition to organizing various engaging activities at the college's
-              chapter and student branches, the CSI also conducts periodic seminars and events to keep students updated with the
-              latest advancements in technology and provide them with a platform to learn and grow.
-              CSI has organised many major events till now with  participation of over 500 students.
-              
+              {isContentExpanded1
+                ? "CSI FCRIT COUNCIL UNDER THE CSI CHAPTER of India aims to create a platform for students to enhance their knowledge and skills in the field of computer science. The chapter fosters a sense of partnership among its members, encouraging collaboration and networking. In addition to organizing various engaging activities at the college's chapter and student branches, the CSI also conducts periodic seminars and events to keep students updated with the latest advancements in technology and provide them with a platform to learn and grow. CSI has organised many major events till now with  participation of over 500 students."
+                : "CSI FCRIT COUNCIL UNDER THE CSI CHAPTER of India aims to create a platform for students to enhance their knowledge and skills in the field of computer science..."}
             </p>
-          
+            {window.innerWidth <= 750 && (
+            <button onClick={toggleContent1} className="slide3__button">
+              {isContentExpanded1 ? "Read Less" : "Read More"}
+            </button>
+            )}
             <button
               onClick={() => {
                 setContent(2);
@@ -92,7 +116,7 @@ const Homepage=()=> {
             >
               CSI Chapter
             </button>
-            <Link to="/Events" className="no-underline">
+            {/* <Link to="/Events" className="no-underline">
               <button
                 
                 className="slide3__button"
@@ -100,7 +124,7 @@ const Homepage=()=> {
                 Check Our Events
               </button>
 
-            </Link>
+            </Link> */}
             
           </section>
         </>
@@ -114,14 +138,15 @@ const Homepage=()=> {
             {/* <h1 className="title">CSI</h1> */}
             <h1 className="about__title">Computer Society of India</h1>
             <p className="about__content">
-              The seed for the Computer Society of India (CSI) was first shown in the year 1965
-              with a handful of IT enthusiasts who were a computer user group and felt the need to
-              organize tteir activities. They also wanted to share their knowledge and exchange ideas on
-              what they felt was a fast emerging sector. Today the CSI takes pride in being the largest and
-              most professionally managed association of and for IT professionals in India. The purposes of the
-              Society are scientific and educational directed
-              towards the advancement of the theory and practice of computer science and IT.
+              {isContentExpanded2
+                ? "The seed for the Computer Society of India (CSI) was first shown in the year 1965 with a handful of IT enthusiasts who were a computer user group and felt the need to organize tteir activities. They also wanted to share their knowledge and exchange ideas on what they felt was a fast emerging sector. Today the CSI takes pride in being the largest and most professionally managed association of and for IT professionals in India. The purposes of the Society are scientific and educational directed towards the advancement of the theory and practice of computer science and IT."
+                : "The seed for the Computer Society of India (CSI) was first shown in the year 1965 with a handful of IT enthusiasts who were a computer user group and felt the need to organize tteir activities..."}
             </p>
+            {window.innerWidth <= 750 && (
+            <button onClick={toggleContent2} className="slide3__button">
+              {isContentExpanded2 ? "Read Less" : "Read More"}
+            </button>
+            )}
             <button
               onClick={() => {
                 setContent(0);
@@ -132,7 +157,7 @@ const Homepage=()=> {
             >
               HOMEPAGE
             </button>
-            <Link to="/Team" className="no-underline">
+            {/* <Link to="/Team" className="no-underline">
               <button
 
                 className="slide3__button"
@@ -140,7 +165,7 @@ const Homepage=()=> {
                 Meet Our Team
               </button>
 
-            </Link>
+            </Link> */}
           </section>
         </>
       )}

@@ -150,15 +150,15 @@ tsparticles {
 }
 
 .slide3__button {
-  height: 40px;
-  width: 150px;
-  font-size: 16px;
+  height: 2.3rem;
+  width: 8rem;
+  font-size: 1rem;
   background: none;
   color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 20px;
   cursor: pointer;
-  margin-right: 2rem;
+  margin-right: 1.35rem;
   margin-bottom: 1rem;
 }
 .slide3__button:hover{
