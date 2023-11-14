@@ -1,21 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import logo from './COMPUTERFCRIT.png';
 
 import "./Navbar.css";
+import { Style } from "paper/dist/paper-core";
 
 function Navbar() {
+  const[active, setActive] = useState(false);
+
+
   return (
-    <div className="navbar">
-      <img src={logo} alt="logo"  className="logo"/>
+    <nav className={`navbar ${active && ('active')}`} >
+      {/* <div className="nav"> */}
+      <Link to="/" >
+        <img src={logo} alt="logo" className="logo" /></Link>
       <ul className="navbar__links" type="none">
-        <Link to="/" className="no-underline"><li>HOME</li></Link>
-        <Link to="/Team" className="no-underline"><li>OUR TEAM</li></Link>
-        <Link to="/Events" className="no-underline"><li>EVENTS</li></Link>
-        <Link to="/ContactUs" className="no-underline"><li>CONTACT US</li></Link>
-      </ul>
-    </div>
+        <Link to="/" className="no-underline"><li onClick={()=>(setActive(!active))}>HOME</li></Link>
+        <Link to="/Team" className="no-underline"><li onClick={() => (setActive(!active))}>OUR TEAM</li></Link>
+        <Link to="/Events" className="no-underline"><li onClick={() => (setActive(!active))}>EVENTS</li></Link>
+        <Link to="/ContactUs" className="no-underline"><li onClick={() => (setActive(!active))}>CONTACT US</li></Link>
+        </ul>
+      {/* </div> */}
+      <span className="hamburger material-symbols-outlined"  aria-hidden="true" onClick={() => (setActive(!active))}>
+        {!active ? 'menu':'close'}
+      </span>
+    </nav>
   );
 }
 
 export default Navbar;
+
+
+

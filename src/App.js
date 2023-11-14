@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import "./styles.css";
 import React, { useEffect, useState } from 'react';
 import Homepage from "./components/homepage/Homepage";
@@ -8,6 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Starbg from "./components/homepage/Starbg";
 import Team from './components/aboutUsPage/Team';
 import AnimatedCursor from "react-animated-cursor";
+import { Loader } from "@react-three/drei";
 import "./components/Loader.scss";
 import Loader from "./components/Loader";
 
@@ -18,16 +20,14 @@ export default function App() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false);
+      setIsLoading(true);
     }, 5000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="App">
-      {isLoading ? (
-          <Loader/>
-        ) : (
+      {isLoading ?(<Loader />):(
         <div>
       <BrowserRouter>
         <Navbar />
