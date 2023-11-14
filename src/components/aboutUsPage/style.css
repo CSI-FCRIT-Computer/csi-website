@@ -451,7 +451,7 @@
 
     /* <- 2-1  hexagons per row */
     #hexGrid {
-        padding-bottom: calc(50% - 10%);
+        padding-bottom: calc(50% - 6%);
         font-size: 12px;
     }
 
