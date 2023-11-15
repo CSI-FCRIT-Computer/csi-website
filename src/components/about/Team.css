@@ -12,6 +12,7 @@ body{
 }
 .heading{
     /* border: 2px solid red; */
+    font-size: 2rem;
     text-align: center;
 }
 .heading h1{
