@@ -3,7 +3,7 @@
 /* .events {
  overflow: hidden; 
 } */
-h1 {
+h1,h3 {
   font-size: xx-large; 
   font-weight: 400; 
 }
