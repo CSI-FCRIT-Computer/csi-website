@@ -1,4 +1,6 @@
-
+.bg-black{
+  font-family: 'Chakra Petch',sans-serif;
+}
 .bg-layers {
     -webkit-animation: filter-animation 4s infinite;
     animation: filter-animation 4s infinite;

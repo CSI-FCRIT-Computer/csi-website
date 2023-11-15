@@ -12,6 +12,7 @@
     animation: inAnimation 3.5s ease-in-out;
 } 
 .top-10vh{
+    font-family: 'Orbitron', sans-serif;
     top: 10vh;
 }
 .team-main h1{

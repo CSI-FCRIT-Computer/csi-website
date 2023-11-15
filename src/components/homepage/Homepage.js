@@ -70,12 +70,12 @@ const Homepage=()=> {
       {/* Landing View */}
       {content === 0 /*|| content === 1 || content === 2*/ && (
         <section className="landing">
-          <h1 className="landing__title">Computer Society Of India</h1>
+          <h1 className="landing__title">Computer Society of India</h1>
           <h2 className="landing__subtitle">
             Department of <br/>
             Computer Engineering
           </h2>
-          <h3>Fr. Conceicao Rodrigues Institute of Technology </h3><br/>
+          <h3 className="landing__subsub">Fr. Conceicao Rodrigues Institute of Technology </h3><br/>
           <button
             onClick={() => {
               setContent(1);
