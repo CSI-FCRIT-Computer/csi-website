@@ -3,7 +3,10 @@
 /* .events {
  overflow: hidden; 
 } */
-
+h1, h2, h3, h4, h5, h6 {
+  font-size: initial; /* or specify a new font-size */
+  font-weight: initial; /* or specify a new font-weight */
+}
 
 
 
