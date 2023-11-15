@@ -3,7 +3,10 @@
 /* .events {
  overflow: hidden; 
 } */
-
+h1,h3 {
+  font-size: xx-large; 
+  font-weight: 400; 
+}
 
 
 
@@ -132,9 +135,11 @@ z-index: 10;
 }
 
 .events .heading {
+  padding-bottom: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
   text-align: center;
   margin: 0;
-  /* top: 8vh; */
+  top: 2vh;
 }
 
 
@@ -142,7 +147,7 @@ z-index: 10;
 
 
 .swiper .swiper_container {
-  padding: 2rem 0 6rem;
+  padding: 2rem 0 32vh;
   position: relative;
   
 
@@ -155,12 +160,12 @@ z-index: 10;
 }
 
 @media (max-width: 550px) {
-  .swiper{
+  /* .swiper{
     height: 60vh;
-  }
-  .swiper .swiper_container {
-    height: 35vh;
-  }
+  } */
+  /* .swiper .swiper_container {
+     height: 35vh; 
+  } */
 
   .swiper .swiper-slide {
     width: 15rem !important;

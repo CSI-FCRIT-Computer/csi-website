@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Chakra+Petch:wght@600&family=Orbitron:wght@500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -57,15 +59,20 @@ tsparticles {
 
 .landing__title {
   font-size: 60px;
+   font-family: 'Audiowide', sans-serif; 
+  /* font-family: 'Chakra Petch', sans-serif; */
+  /* font-family: 'Karla', sans-serif; */
   /* animation: title 1.5s ease-in-out; */
 }
 
 .landing__subtitle {
+  font-family: 'Chakra Petch', sans-serif;
   font-size: 40px;
   font-weight: 300;
 }
 
 .landing__button {
+  font-family: 'Audiowide', sans-serif;
   height: 60px;
   width: 200px;
   font-size: 24px;
@@ -81,7 +88,9 @@ tsparticles {
   background-color: #ffffff;
   color: #26b0e3;
 }
-
+.landing__subsub{
+  font-family: 'Chakra Petch', sans-serif;
+}
 .title {
   width: 100vw;
   color: #d6d6d6;
@@ -89,9 +98,11 @@ tsparticles {
   top: 2vmax;
   text-align: center;
   font-size: 60px;
+  font-family: 'Audiowide', sans-serif;
   /* border: 2px solid red; */
 }
 .ani_title {
+  font-family: 'Audiowide', sans-serif;
   animation: title 1.5s ease-in-out;
 }
 @keyframes title {
@@ -116,11 +127,13 @@ tsparticles {
 }
 
 .about__title {
+  font-family: 'Orbitron', sans-serif;
   font-size: 40px;
 }
 
 .about__content {
   font-size: 16px;
+  font-family: 'Orbitron', sans-serif;
   text-align: justify;
 }
 
@@ -133,6 +146,7 @@ tsparticles {
 /* Slide 3*/
 
 .slide3 {
+  font-family: 'Audiowide', sans-serif;
   width: 32vw;
   min-width: 300px;
   /* max-width: 50vw; */
@@ -150,16 +164,17 @@ tsparticles {
 }
 
 .slide3__button {
-  height: 40px;
-  width: 150px;
-  font-size: 16px;
+  height: 2.3rem;
+  width: 8rem;
+  font-size: 1rem;
   background: none;
   color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 20px;
   cursor: pointer;
-  margin-right: 2rem;
+  margin-right: 1.35rem;
   margin-bottom: 1rem;
+  font-family: 'Audiowide',sans-serif;
 }
 .slide3__button:hover{
   background-color: #ffffff;

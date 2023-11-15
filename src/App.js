@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Starbg from "./components/homepage/Starbg";
 import Team from './components/aboutUsPage/Team';
 import AnimatedCursor from "react-animated-cursor";
-import { Loader } from "@react-three/drei";
+// import { Loader } from "@react-three/drei";
 import "./components/Loader.scss";
 import Loader from "./components/Loader";
 
@@ -20,7 +20,7 @@ export default function App() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(true);
+      setIsLoading(false);
     }, 5000);
     return () => clearTimeout(timer);
   }, []);

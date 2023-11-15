@@ -12,6 +12,7 @@
     animation: inAnimation 3.5s ease-in-out;
 } 
 .top-10vh{
+    font-family: 'Orbitron', sans-serif;
     top: 10vh;
 }
 .team-main h1{
@@ -106,9 +107,10 @@
     flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
-    overflow: hiddsen;
+    /* overflow: hidden; */
     font-family: sans-serif;
     list-style-type: none;
+    /* padding-bottom: calc(20% - 1%); */
 }
 
 .hex {
@@ -391,7 +393,7 @@
 
     /* <- 5-4  hexagons per row */
     #hexGrid {
-        padding-bottom: 4.4%
+        padding-bottom: calc(20% - 6%);
     }
 
     .hex {
@@ -410,7 +412,7 @@
 
     /* <- 4-3  hexagons per row */
     #hexGrid {
-        padding-bottom: 5.5%;
+        padding-bottom: calc(25% - 10%);
         font-size: 13px;
     }
 
@@ -430,7 +432,7 @@
 
     /* <- 3-2  hexagons per row */
     #hexGrid {
-        padding-bottom: 7.4%;
+        padding-bottom: calc(33.333% - 10%);
         font-size: 14px;
     }
 
@@ -450,7 +452,7 @@
 
     /* <- 2-1  hexagons per row */
     #hexGrid {
-        padding-bottom: 11.2%;
+        padding-bottom: calc(50% - 6%);
         font-size: 12px;
     }
 
