@@ -1,3 +1,4 @@
+import snehalmaam from "./images/SnehalMaam.jpg"
 import nimisha from "./images/Nimisha.jpg";
 import jayesh from "./images/Jayesh.jpg";
 import rohit from "./images/Rohit.jpeg";
@@ -24,7 +25,7 @@ const TeamDetails = [
     },
     {
         "id": 2,
-        "img": "",
+        "img": snehalmaam,
         "name": "Ms. Snehal Nikalje",
         "post": "Faculty Coordinator",
         "ig": "",
