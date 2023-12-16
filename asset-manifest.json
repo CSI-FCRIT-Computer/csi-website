@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/csi-website/static/css/main.fdb15f8f.css",
+    "main.js": "/csi-website/static/js/main.5123efd3.js",
+    "static/media/3.jpg": "/csi-website/static/media/3.b8edd6387da41a1ceebe.jpg",
+    "static/media/csi-homepage2.png": "/csi-website/static/media/csi-homepage2.c8af855aec2f3822b8d4.png",
+    "static/media/2.jpg": "/csi-website/static/media/2.a9d14ccdb3d21f6f4d95.jpg",
+    "static/media/Nimisha.jpg": "/csi-website/static/media/Nimisha.a0d937d0c06d51b93573.jpg",
+    "static/media/6.jpg": "/csi-website/static/media/6.2ac55529b8e05e3c0fca.jpg",
+    "static/media/suhani.jpg": "/csi-website/static/media/suhani.55e539af5ae5791ec276.jpg",
+    "static/media/Jayesh.jpg": "/csi-website/static/media/Jayesh.42b1a8f37166ba29e21f.jpg",
+    "static/media/alex.jpg": "/csi-website/static/media/alex.64df549d8409f58eba4c.jpg",
+    "static/media/SnehalMaam.jpg": "/csi-website/static/media/SnehalMaam.db0785d3bf7a90cc3b4b.jpg",
+    "static/media/Sakethreddy.jpeg": "/csi-website/static/media/Sakethreddy.f7fc7ee9fc789e935ec3.jpeg",
+    "static/media/SavioDias.jpg": "/csi-website/static/media/SavioDias.b7549117072323c2882c.jpg",
+    "static/media/Tanishka.jpg": "/csi-website/static/media/Tanishka.d03a65ae3203d9c10c76.jpg",
+    "static/media/Kousthubh_Yadavalli.jpg": "/csi-website/static/media/Kousthubh_Yadavalli.1ed85f5fb683f5d5fda6.jpg",
+    "static/media/5.jpg": "/csi-website/static/media/5.408850c7c00215da263c.jpg",
+    "static/media/1.jpg": "/csi-website/static/media/1.a67478d8b71413a27857.jpg",
+    "static/media/COMPUTERFCRIT.png": "/csi-website/static/media/COMPUTERFCRIT.f60f0888a3530dc2a82a.png",
+    "static/media/4.jpg": "/csi-website/static/media/4.75ea7b4daec81bd8ead3.jpg",
+    "static/media/aaron.jpg": "/csi-website/static/media/aaron.c7e4ebb49938c494da95.jpg",
+    "static/media/7.jpg": "/csi-website/static/media/7.bd5bedae26f2e36283af.jpg",
+    "static/media/Rohit.jpeg": "/csi-website/static/media/Rohit.0e21cc2e2d1d740ddac7.jpeg",
+    "static/media/joevita.jpeg": "/csi-website/static/media/joevita.bf94a0ebf50437be6a6e.jpeg",
+    "static/media/Sagar_Shukla.jpg": "/csi-website/static/media/Sagar_Shukla.0a1205be49071e136057.jpg",
+    "static/media/instagram.png": "/csi-website/static/media/instagram.75e0546a6b5abe4c0506.png",
+    "index.html": "/csi-website/index.html",
+    "main.fdb15f8f.css.map": "/csi-website/static/css/main.fdb15f8f.css.map",
+    "main.5123efd3.js.map": "/csi-website/static/js/main.5123efd3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fdb15f8f.css",
+    "static/js/main.5123efd3.js"
+  ]
+}
