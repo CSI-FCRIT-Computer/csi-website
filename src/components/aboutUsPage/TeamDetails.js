@@ -1,4 +1,5 @@
 import snehalmaam from "./images/SnehalMaam.jpg"
+import priyamvadamaam from "./images/PriyamvadaMaam.jpg"
 import nimisha from "./images/Nimisha.jpg";
 import jayesh from "./images/Jayesh.jpg";
 import rohit from "./images/Rohit.jpeg";
@@ -15,8 +16,8 @@ import tanishka from "./images/Tanishka.jpg";
 const TeamDetails = [
     {
         "id": 1,
-        "img": "",
-        "name": "Dr. Chhaya Pawar",
+        "img": snehalmaam,
+        "name": "Ms. Snehal Nikalje",
         "post": "Faculty Coordinator",
         "ig": "",
         "linkedin": "",
@@ -25,8 +26,8 @@ const TeamDetails = [
     },
     {
         "id": 2,
-        "img": snehalmaam,
-        "name": "Ms. Snehal Nikalje",
+        "img": priyamvadamaam,
+        "name": "Ms. Priyamvada Singh",
         "post": "Faculty Coordinator",
         "ig": "",
         "linkedin": "",

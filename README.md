@@ -15,6 +15,8 @@ This project is built using the MERN stack, which stands for MongoDB, Express.js
 
 We welcome contributions from anyone interested in improving the CSI FCRIT website. Whether you are a student, developer, or enthusiast, your input is valuable. 
 
-[//]: <> (<a href="https://github.com/CSI-FCRIT-Computer/csi-website/graphs/contributors">
+### Recent contributors:
+
+<a href="https://github.com/CSI-FCRIT-Computer/csi-website/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=CSI-FCRIT-Computer/csi-website" />
-</a>.)
+</a>
