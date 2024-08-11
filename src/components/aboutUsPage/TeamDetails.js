@@ -1,31 +1,23 @@
-import snehalmaam from "./images/SnehalMaam.jpg"
-import priyamvadamaam from "./images/PriyamvadaMaam.jpg"
-import nimisha from "./images/Nimisha.jpg";
-import jayesh from "./images/Jayesh.jpg";
-import rohit from "./images/Rohit.jpeg";
-import savio from "./images/SavioDias.jpg";
-import saketh from "./images/Sakethreddy.jpeg";
-import alex from "./images/alex.jpg";
-import koustubh from "./images/Kousthubh_Yadavalli.jpg";
-import sagar from "./images/Sagar_Shukla.jpg";
-import suhani from "./images/suhani.jpg";
-import aaron from "./images/aaron.jpg";
-import joevita from "./images/joevita.jpeg";
-import tanishka from "./images/Tanishka.jpg";
+import priyamvadamaam from "./images/PriyamvadaMaam.jpg";
+import steffi from "./images/Steffi.jpeg";
+import sharvari from "./images/Sharvari.jpg";
+import durvesh from "./images/Durvesh.jpg";
+import aryan from "./images/Aryan.jpg";
+import ishita from "./images/Ishita.jpg";
+import tirthesh from "./images/Tirthesh.JPG";
+import purvi from "./images/Purvi.jpg";
+import revant from "./images/Revant.jpg";
+import tanmay from "./images/Tanmay.jpg";
+import luziana from "./images/Luziana.jpg";
+import aayush from "./images/Aayush.jpg";
+import evan from "./images/Evan.jpg";
+import reena from "./images/Reena.jpeg";
+import wynona from "./images/Wynona.jpeg";
+
 
 const TeamDetails = [
     {
         "id": 1,
-        "img": snehalmaam,
-        "name": "Ms. Snehal Nikalje",
-        "post": "Faculty Coordinator",
-        "ig": "",
-        "linkedin": "",
-        "git": "",
-        "twit": ""
-    },
-    {
-        "id": 2,
         "img": priyamvadamaam,
         "name": "Ms. Priyamvada Singh",
         "post": "Faculty Coordinator",
@@ -35,7 +27,7 @@ const TeamDetails = [
         "twit": ""
     },
     {
-        "id": 3,
+        "id": 2,
         "img": steffi,
         "name": "Steffi Mary Varghese",
         "post": "President",
@@ -45,7 +37,7 @@ const TeamDetails = [
         "twit": ""
     },
     {
-        "id": 4,
+        "id": 3,
         "img": sharvari,
         "name": "Sharvari Kulkarni",
         "post": "Vice President",
@@ -55,17 +47,17 @@ const TeamDetails = [
         "twit": ""
     },
     {
-        "id": 5,
+        "id": 4,
         "img": durvesh,
         "name": "Durvesh Mahajan",
         "post": "Operational Secretary",
         "ig": "https://www.instagram.com/durvesh_24_04?igsh=MXg4OW1ibHU3dHBjbw%3D%3D&utm_source=qr",
         "linkedin": "https://www.linkedin.com/in/durvesh-mahajan-a53ba3284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         "git": "https://github.com/durvesh-24",
-        "twit": "https://twitter.com/itz_perkypaturi"
+        "twit": ""
     },
     {
-        "id": 6,
+        "id": 5,
         "img": aryan,
         "name": "Aryan Nair",
         "post": "Technical Head",
@@ -74,7 +66,7 @@ const TeamDetails = [
         "git": "https://github.com/ASN-cmd",
         "twit": ""
     }, {
-        "id": 7,
+        "id": 6,
         "img": tirthesh,
         "name": "Tirthesh Kolhe",
         "post": "Treasurer",
@@ -84,7 +76,7 @@ const TeamDetails = [
         "twit": ""
     },
     {
-        "id": 8,
+        "id": 7,
         "img": luziana,
         "name": "Luziana Dmello",
         "post": "Creative Head",
@@ -94,18 +86,18 @@ const TeamDetails = [
         "twit": ""
     },
     {
-        "id": 9,
+        "id": 8,
         "img": evan,
         "name": "Evan Mathew",
         "post": "Creative Coordinator",
         "ig": "https://www.instagram.com/evaan.mathew?igsh=OHBhb2RhZTY1dXI=",
-        "linkedin": "http://www.linkedin.com/in/tanishka-sonar-73a35a233",
-        "git": "https://github.com/tanishkasonar22",
+        "linkedin": "",
+        "git": "",
         "twit": ""
     },
 
     {
-        "id": 10,
+        "id": 9,
         "img": wynona,
         "name": "Wynona Toby",
         "post": "Creative Coordinator",
@@ -116,27 +108,27 @@ const TeamDetails = [
     },
 
     {
-        "id": 11,
+        "id": 10,
         "img": ishita,
         "name": "Ishita Patil",
         "post": "PR Head",
-        "ig": "https://www.instagram.com/saakkeetth_reddy/",
-        "linkedin": "https://www.linkedin.com/in/sakethreddy-dakamreddy-parne-bbb017243",
-        "git": "https://github.com/ShutterBugSR",
+        "ig": "",
+        "linkedin": "",
+        "git": "",
+        "twit": ""
+    },
+    {
+        "id": 11,
+        "img": purvi,
+        "name": "Purvi Passi",
+        "post": "Sponsorship Head",
+        "ig": "https://www.instagram.com/purvi_passi?igsh=MXByZzM2ZWdlMTFyZA==",
+        "linkedin": "https://www.linkedin.com/in/purvi-passi-88064927b/",
+        "git": "https://github.com/pxxpassi/",
         "twit": ""
     },
     {
         "id": 12,
-        "img": purvi,
-        "name": "Purvi Passi",
-        "post": "Sponsorship Head",
-        "ig": "https://www.instagram.com/kousthubh_yadavalli/",
-        "linkedin": "https://www.linkedin.com/in/kousthubh-yadavalli-a6299a260",
-        "git": "https://github.com/Kousthubh02",
-        "twit": ""
-    },
-    {
-        "id": 13,
         "img": aayush,
         "name": "Aayush Nehete",
         "post": "Documentation Head",
@@ -150,7 +142,7 @@ const TeamDetails = [
         "id": 13,
         "img": reena,
         "name": "Reena Moncy",
-        "post": "Assistant Documentation Head",
+        "post": "Asst. Documentation Head",
         "ig": "https://www.instagram.com/reena_moncy?igsh=eXN6eHcyZzBsejJw&utm_source=qr",
         "linkedin": "http://www.linkedin.com/in/reena-moncy-74b189308",
         "git": "https://github.com/reenamoncy",
@@ -165,8 +157,9 @@ const TeamDetails = [
         "ig": "https://www.instagram.com/tanmay_chavan_36/?next=%2F",
         "linkedin": "https://www.linkedin.com/in/tanmay-chavan-2832432b7/",
         "git": "https://github.com/tanmaychavan14",
-        "twit": "#"
+        "twit": ""
     },
+
     {
         "id": 15,
         "img": revant,
