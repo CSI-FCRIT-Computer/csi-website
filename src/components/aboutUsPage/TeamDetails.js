@@ -142,7 +142,7 @@ const TeamDetails = [
         "id": 13,
         "img": reena,
         "name": "Reena Moncy",
-        "post": "Assistant Documentation Head",
+        "post": "Asst. Documentation Head",
         "ig": "https://www.instagram.com/reena_moncy?igsh=eXN6eHcyZzBsejJw&utm_source=qr",
         "linkedin": "http://www.linkedin.com/in/reena-moncy-74b189308",
         "git": "https://github.com/reenamoncy",
