@@ -1,9 +1,9 @@
 import priyamvadamaam from "./images/PriyamvadaMaam.jpg";
-import steffi from "./images/Steffi.jpg";
+import steffi from "./images/Steffi.jpeg";
 import sharvari from "./images/Sharvari.jpg";
-import durvesh from "./images/Durvesh.jpeg";
+import durvesh from "./images/Durvesh.jpg";
 import aryan from "./images/Aryan.jpg";
-import ishita from "./images/Ishita.jpeg";
+import ishita from "./images/Ishita.jpg";
 import tirthesh from "./images/Tirthesh.JPG";
 import purvi from "./images/Purvi.jpg";
 import revant from "./images/Revant.jpg";
@@ -12,7 +12,7 @@ import luziana from "./images/Luziana.jpg";
 import aayush from "./images/Aayush.jpg";
 import evan from "./images/Evan.jpg";
 import reena from "./images/Reena.jpeg";
-import wynona from "./images/Wynona.jpg";
+import wynona from "./images/Wynona.jpeg";
 
 
 const TeamDetails = [
