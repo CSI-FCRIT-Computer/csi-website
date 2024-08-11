@@ -112,9 +112,9 @@ const TeamDetails = [
         "img": ishita,
         "name": "Ishita Patil",
         "post": "PR Head",
-        "ig": "https://www.instagram.com/saakkeetth_reddy/",
-        "linkedin": "https://www.linkedin.com/in/sakethreddy-dakamreddy-parne-bbb017243",
-        "git": "https://github.com/ShutterBugSR",
+        "ig": "",
+        "linkedin": "",
+        "git": "",
         "twit": ""
     },
     {
