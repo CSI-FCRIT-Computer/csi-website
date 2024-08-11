@@ -54,7 +54,7 @@ const TeamDetails = [
         "ig": "https://www.instagram.com/durvesh_24_04?igsh=MXg4OW1ibHU3dHBjbw%3D%3D&utm_source=qr",
         "linkedin": "https://www.linkedin.com/in/durvesh-mahajan-a53ba3284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         "git": "https://github.com/durvesh-24",
-        "twit": "https://twitter.com/itz_perkypaturi"
+        "twit": ""
     },
     {
         "id": 5,
@@ -157,7 +157,7 @@ const TeamDetails = [
         "ig": "https://www.instagram.com/tanmay_chavan_36/?next=%2F",
         "linkedin": "https://www.linkedin.com/in/tanmay-chavan-2832432b7/",
         "git": "https://github.com/tanmaychavan14",
-        "twit": "#"
+        "twit": ""
     },
     {
         "id": 15,
