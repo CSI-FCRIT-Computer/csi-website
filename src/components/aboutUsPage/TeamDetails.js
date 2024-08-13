@@ -12,7 +12,7 @@ import luziana from "./images/Luziana.jpg";
 import aayush from "./images/Aayush.jpg";
 import evan from "./images/Evan.jpg";
 import reena from "./images/Reena.jpeg";
-import wynona from "./images/Wynona.jpeg";
+import wynona from "./images/wynona.jpg";
 
 
 const TeamDetails = [
@@ -112,7 +112,7 @@ const TeamDetails = [
         "img": ishita,
         "name": "Ishita Patil",
         "post": "PR Head",
-        "ig": "",
+        "ig": "https://www.instagram.com/ishitaaa_patil?igsh=enVzOWo5d29vNjhk",
         "linkedin": "",
         "git": "",
         "twit": ""
