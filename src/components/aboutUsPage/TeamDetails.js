@@ -159,6 +159,7 @@ const TeamDetails = [
         "git": "https://github.com/tanmaychavan14",
         "twit": ""
     },
+
     {
         "id": 15,
         "img": revant,
