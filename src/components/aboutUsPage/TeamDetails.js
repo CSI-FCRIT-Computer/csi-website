@@ -2,7 +2,7 @@ import priyamvadamaam from "./images/PriyamvadaMaam.jpg";
 import steffi from "./images/Steffi.jpeg";
 import sharvari from "./images/Sharvari.jpg";
 import durvesh from "./images/Durvesh.jpg";
-import aryan from "./images/Aryan.jpg";
+import aryan from "./images/Aryan1.jpg";
 import ishita from "./images/Ishita.jpg";
 import tirthesh from "./images/Tirthesh.JPG";
 import purvi from "./images/Purvi.jpg";
