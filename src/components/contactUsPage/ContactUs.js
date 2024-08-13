@@ -9,8 +9,7 @@ function ContactUs() {
        <h1 className='heading'>Contact Us</h1>
       <div className='contactus'> 
      
-      <iframe src='https://widgets.sociablekit.com/instagram-feed/iframe/219912' className='insta' frameBorder='0' width='1000vw' height='1000vw' allowFullScreen></iframe>
-    
+      <iframe src='https://widgets.sociablekit.com/instagram-feed/iframe/25449204' className='insta' frameBorder='0' width='1000vw' height='1000vw' allowFullScreen></iframe>
       </div>
       <div>
       </div>    
