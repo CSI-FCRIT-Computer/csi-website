@@ -8,14 +8,11 @@ import ContactUs from "./components/contactUsPage/ContactUs";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Starbg from "./components/homepage/Starbg";
 import Team from './components/aboutUsPage/Team';
-import AnimatedCursor from "react-animated-cursor";
 // import { Loader } from "@react-three/drei";
 import "./components/Loader.scss";
 import Loader from "./components/Loader";
 
-
 export default function App() {
-
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -27,34 +24,20 @@ export default function App() {
 
   return (
     <div className="App">
-      {isLoading ?(<Loader />):(
+      {isLoading ? (
+        <Loader />
+      ) : (
         <div>
-      <BrowserRouter>
-        <Navbar />
-        <AnimatedCursor
-          innerSize={8}
-          outerSize={35}
-          innerScale={1}
-          outerScale={2}
-          outerAlpha={0}
-          hasBlendMode={true}
-          innerStyle={{
-            zIndex: 9999, 
-            backgroundColor: 'var(--cursor-color)'
-          }}
-          outerStyle={{
-            zIndex: 9999, 
-            border: '3px solid var(--cursor-color)'
-          }}
-        />
-        <Starbg />
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/Events" element={<Events />} />
-          <Route path="/Team" element={<Team />} />
-          <Route path="/ContactUs" element={<ContactUs />} />
-          </Routes>
-        </BrowserRouter>
+          <BrowserRouter>
+            <Navbar />
+            <Starbg />
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/Events" element={<Events />} />
+              <Route path="/Team" element={<Team />} />
+              <Route path="/ContactUs" element={<ContactUs />} />
+            </Routes>
+          </BrowserRouter>
         </div>
       )}
     </div>
