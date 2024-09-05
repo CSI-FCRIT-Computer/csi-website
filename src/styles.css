@@ -33,9 +33,54 @@ p {
   font-size: 16px;
 } */
 html {
+  
   --cursor-color: #fff
 }
 
 html.dark-mode {
+  
   --cursor-color: #fff
 }
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+/* Outer Circle
+.outer-circle {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--cursor-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease-out, width 0.2s, height 0.2s;
+}
+
+/* Inner Dot */
+/* .inner-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--cursor-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Hover state to make the outer circle bigger */
+/* .outer-circle.hover {
+  width: 80px; 
+  height: 80px;
+  transform: translate(-50%, -50%) scale(1.2); 
+} */
+
+/* Customize cursor color */
+/* :root {
+  --cursor-color: #f3e7e7; 
+}  */
