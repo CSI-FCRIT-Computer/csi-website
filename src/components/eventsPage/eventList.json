@@ -1,12 +1,12 @@
 [
     {
       "id":"1",
-      "img": "/assets/event/hackathonSample.jpg",
-      "title": "CODEMANIA 2k24",
-      "content": "Get ready to unleash your coding potential in the ultimate CSI Coding Competition! Whether you're a seasoned programmer or just starting out, this challenge is designed to push your limits and spark your creativity. Compete against the brightest minds, solve complex problems, and showcase your skills in an electrifying environment. With exciting prizes up for grabs and a platform to demonstrate your coding prowess, this is your chance to shine. Don’t miss out on this thrilling opportunity to take your coding journey to the next level!",
+      "img": "/assets/event/freshmen_induction.jpg",
+      "title": "Freshmen Induction 2024",
+      "content": "CSI FCRIT in association with Coding Ninjas, bring you an exclusive webinar called the Freshmen Induction. An experienced software developer, Mr. Kunal Jindal, SDE- II at Microsoft, will be sharing expert insights on how to crack top coding interviews and build a strong foundation! 😎💻",
       "location": "Computer Dept., FCRIT",
-      "date": "TBA",
-      "time": "TBA",
+      "date": "12-10-2024",
+      "time": "6:00 PM",
       "tagLine": "Lorem ipsum is a placeholder or dummy text",
       "type": "upcoming"
     },
