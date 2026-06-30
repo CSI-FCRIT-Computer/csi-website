@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './style.css';
+import teamPhoto from './images_25-26/team-photo.jpg'; //
 import TeamDetails from "./TeamDetails.js";
 import ig from "./images/instagram.png";
 import li from "./images/linkedin.png"
@@ -12,15 +13,11 @@ import Footer from '../Footer.js';
 
 function AboutUs() {
 
-  
-
-
-
-
   return (
     <>
     <div className="team-main">
-      <h1 className='top-10vh heading'> CSI COUNCIL 2024-25</h1>
+      
+      <h1 className='top-10vh heading'> CSI COUNCIL 2025-26</h1>
       {/* <div className="container row"> */}
         <div className="grid">
           <ul id="hexGrid">
@@ -61,7 +58,15 @@ function AboutUs() {
               </li>
         )}
     </ul>
+    <br></br>
       </div>
+       {/* ================== NEW TEAM PHOTO SECTION ================== */}
+        {/* 2. ADD THIS SECTION FOR THE TEAM PHOTO */}
+        <div className='team-photo-section'>
+            <h2 className='heading'>The Whole Team</h2>
+            <img src={teamPhoto} alt="CSI Team 2025-26" className='full-team-image' />
+        </div>
+        {/* ========================================================== */}
       
 
     </div>

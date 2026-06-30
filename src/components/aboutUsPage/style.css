@@ -1,159 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
- .team-main * {
+
+/* --- General Resets --- */
+.team-main * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* --- Main Container Layout --- */
 .team-main {
-    top: 6vh;
-  place-items: center; 
+    /* Desktop navbar spacing */
+    padding-top: 150px; 
+    padding-bottom: 6vh;
+    width: 100%;
     background: transparent;
     animation: inAnimation 3.5s ease-in-out;
-} 
-.top-10vh{
-    font-family: 'Orbitron', sans-serif;
-    top: 10vh;
 }
-.team-main h1{
+
+.team-main .heading {
+    font-family: 'Orbitron', sans-serif;
     font-weight: 700;
     text-align: center;
-   
+    margin-bottom: 8vh;
+    color: #fff;
 }
-.team-main .grid{
-    top:10vh;
-}
-/* .team-main .container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 100rem;
-    gap: 10px;
-    font-family: "Ubuntu Mono", monospace;
-    font-weight: 400;
-  
-
-    >div {
-        flex: 0 0 120px;
-        border-radius: 0.5rem;
-        transition: 0.5s ease-in-out;
-        cursor: pointer;
-        box-shadow: 1px 5px 15px rgb(7, 51, 163);
-        position: relative;
-        overflow: visible;
-
-    
-        .content {
-            font-size: 1.5rem;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            padding: 15px;
-            opacity: 0;
-            flex-direction: column;
-            height: 100%;
-            justify-content: flex-end;
-            background: rgb(2, 2, 46);
-            background: linear-gradient(0deg,
-                    rgba(2, 2, 46, 0.6755077030812324) 0%,
-                    rgba(255, 255, 255, 0) 100%);
-            transform: translatey(100%);
-            transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
-            visibility: hidden;
 
 
-            span {
-                display: block;
-                margin-top: 5px;
-                font-size: 1.2rem;
-            }
-        }
-
-        &:hover {
-            flex: 0 0 250px;
-            box-shadow: 1px 3px 15px #7645d8;
-            transform: translatey(-30px);
-        }
-
-        &:hover .content {
-            opacity: 1;
-            transform: translatey(0%);
-            visibility: visible;
-        }
-    }
-}
-.team-main .container .image{
-    max-height: 80vh;
-    overflow: hidden;
-    width: 4vw;
-}
-.team-main .socials img{
-    height: 5vh;
-    display: inline;
-    margin: 5px;
-}
- */
-
-
-
-
-
-
-
-
-
+/* --- Hexagon Grid --- */
 #hexGrid {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
-    /* overflow: hidden; */
-    font-family: sans-serif;
     list-style-type: none;
-    /* padding-bottom: calc(20% - 1%); */
 }
 
+
+/* --- Hexagon Base Styles --- */
 .hex {
     position: relative;
-    visibility: hidden;
     outline: 1px solid transparent;
-    /* fix for jagged edges in FF on hover transition */
-    transition: all 0.5s;
-    backface-visibility: hidden;
-    will-change: transform;
     transition: all 0.5s;
 }
-
 .hex::after {
     content: '';
     display: block;
     padding-bottom: 86.602%;
-    /* =  100 / tan(60) * 1.5 */
 }
-
 .hexIn {
     position: absolute;
     width: 96%;
     padding-bottom: 110.851%;
-    /* =  width / sin(60) */
     margin: 2%;
     overflow: hidden;
-    visibility: hidden;
-    outline: 1px solid transparent;
-    /* fix for jagged edges in FF on hover transition */
-    -webkit-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
-    -ms-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
     transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
     transition: all 0.5s;
 }
-
 .hexIn * {
     position: absolute;
     visibility: visible;
-    outline: 1px solid transparent;
-    /* fix for jagged edges in FF on hover transition */
 }
-
 .hexLink {
     display: block;
     width: 100%;
@@ -161,319 +69,189 @@
     text-align: center;
     color: #fff;
     overflow: hidden;
-    -webkit-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
-    -ms-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
     transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
 }
 
-
-
-
-/*** HEX CONTENT **********************************************************************/
-/* .hex img {
-    left: -100%;
-    right: -100%;
-    width: auto;
-    height: 100%;
-    margin: 0 auto;
-} */
-
-.hex h1,
-.hex p {
-    width: 100%;
-    padding: 5%;
-    box-sizing: border-box;
-    font-weight: 300;
-    opacity: 0;
-    height: auto;
-}
-
-#demo1 {
-    color: #F5CE95;
-    text-transform: capitalize;
-    text-align: center;
-    padding-top: 50%;
-    font-size: 1.15em;
-}
-
-.hex h1:before,
-.hex h1:after {
-    display: inline-block;
-    margin: 0 0.5em;
-    width: 0.25em;
-    height: 0.03em;
-    background: #ffffff;
-    content: '';
-    vertical-align: middle;
-    transition: all 0.3s;
-    text-align: center;
-}
-
-#demo2 {
-    top: 50%;
-    text-align: center;
-    text-transform: uppercase;
-
-}
-.hex .socials{
-    opacity: 0;
-}
-.hex .socials{
-    width: 15vw;
-    bottom: 25%;
-    position: absolute;
-}
-
-.hex .socials a{
-    width: 5vh;
-    height: 4vh;
-    bottom: 25%;
-}
-.hex .social-img{
-    width: 4vh;
-    height: 4vh;
-}
-
+/* --- Hexagon Content & Background Image --- */
 .img {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 0; right: 0; bottom: 0; left: 0;
     background-position: center center;
     background-size: cover;
     overflow: hidden;
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-
-.img:before,
-.img:after {
+.img:before, .img:after {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 0; right: 0; bottom: 0; left: 0;
     content: '';
     opacity: 0;
     transition: opacity 0.5s;
 }
-
 .img:before {
-    background: rgba(22, 103, 137, 0.3)
+    background: rgba(13, 37, 71, 0.7); 
 }
-
 .img:after {
     background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5), transparent);
 }
-.socials a:nth-child(1){
-    left: 5.5rem;
+
+
+/* --- Text and Socials --- */
+.hex h1, .hex p {
+    width: 100%;
+    padding: 5%;
+    font-weight: 300;
+    opacity: 0;
+    transition: opacity 0.5s 0.2s;
 }
-.socials a:nth-child(2) {
-    left: 7.5rem;
+#demo1 {
+    color: #F5CE95;
+    text-transform: capitalize;
+    text-align: center;
+    top: 35%;
+    font-size: 1.2em;
+    font-weight: bold;
 }
-.socials a:nth-child(3) {
-    left: 9.5rem;
-}
-.socials a:nth-child(4) {
-    left: 11.5rem;
+#demo2 {
+    top: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9em;
 }
 
-@media (max-width:700px) and (min-width:601px) {
-    .socials a:nth-child(1) {
-            left: 5.5rem;
-        }
+/* === FIX #1: REMOVED THE PADDING HACK === */
+/* The large padding-left is gone. Flexbox will now handle centering perfectly. */
+.hex .socials {
+    display: flex;
     
-        .socials a:nth-child(2) {
-            left: 7.5rem;
-        }
+    /* FIX #1: Explicitly force the direction to be a row. */
+    flex-direction: row !important; 
     
-        .socials a:nth-child(3) {
-            left: 3.5rem;
-        }
+    justify-content: center; 
+    align-items: center;
+    gap: 15px; 
     
-        .socials a:nth-child(4) {
-            left: 9.5rem;
-        }
-}
-@media (max-width:600px) and (min-width:501px){
-    .social-img {
-            scale: 0.6;
-        }
-                 .socials a:nth-child(1) {
-                     left: 5.5rem;
-                 }
-        
-                 .socials a:nth-child(2) {
-                     left: 7.5rem;
-                 }
-        
-                 .socials a:nth-child(3) {
-                     left: 3.5rem;
-                 }
-        
-                 .socials a:nth-child(4) {
-                     left: 9.5rem;
-                 }
-        
-                 .social-img {
-                     scale: 0.5;
-                 }
-       
-}
-@media (max-width:500px)  and (min-width:350px){
-    
-    .socials a:nth-child(1) {
-        left: 5.5rem;
-    }
-
-    .socials a:nth-child(2) {
-        left: 7.5rem;
-    }
-
-    .socials a:nth-child(3) {
-        left: 3.5rem;
-    }
-
-    .socials a:nth-child(4) {
-        left: 9.5rem;
-    }
-    .social-img{
-        scale: 0.5;
-    }
-}
-@media (max-width:350px) {
-    .socials a:nth-child(1) {
-        left: 5.5rem;
-    }
-
-    .socials a:nth-child(2) {
-        left: 1.5rem;
-    }
-
-    .socials a:nth-child(3) {
-        left: 3.5rem;
-    }
-
-    .socials a:nth-child(4) {
-        left: 7.5rem;
-    }
-          .social-img {
-              scale: 0.5;
-          }
+    position: absolute;
+    bottom: 25%;
+    width: 100%;
+    left: 0; 
+    right: 0; 
+    opacity: 0;
+    transition: opacity 0.5s 0.2s;
 }
 
+/* FIX #2: Ensure the links themselves don't interfere. */
+.hex .socials a, .hex .socials img {
+    position: static !important; /* Override position:absolute from the * selector */
+    display: inline-block !important; /* Ensure they behave as simple blocks */
+    width: auto !important; /* Let the image define its own width */
+}
 
+.hex .social-img {
+    /* No changes needed here, but shown for context */
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+.hex .social-img:hover {
+    transform: scale(1.2);
+}
 
-/*** HOVER EFFECT  **********************************************************************/
-
-
-
-.hexLink:hover h1,
-.hexLink:focus h1,
-.hexLink:hover p,
-.hexLink:hover .socials,
-.hexLink:focus .socials,
-.hexLink:focus p{
+/* === FIX #2: MOVED THE HOVER TRIGGER === */
+/* The hover effect is now triggered by the parent .hex, making it stable and forgiving. */
+.hex:hover h1,
+.hex:hover p,
+.hex:hover .socials {
     opacity: 1;
-    transition: 0.8s;
 }
 
-
-.hexIn:hover .img:before,
-.hexIn:hover .img:after,
-.hexIn:hover .socials:after,
-.hexIn:hover .hexLink {
+.hex:hover .img:before,
+.hex:hover .img:after {
     opacity: 1;
 }
 
 
-/*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
-@media (min-width:1201px) {
+/*
+============================================================
+    RESPONSIVE HEXAGON SIZING & GRID LAYOUT
+============================================================
+*/
 
-    /* <- 5-4  hexagons per row */
-    #hexGrid {
-        padding-bottom: calc(20% - 6%);
-    }
-
-    .hex {
-        width: 20%;
-        /* = 100 / 5 */
-    }
-
-    .hex:nth-child(9n+6) {
-        /* first hexagon of even rows */
-        margin-left: 10%;
-        /* = width of .hex / 2  to indent even rows */
+/* === FIX #3: RESPONSIVE NAVBAR PADDING === */
+/* Reduces the large top padding on smaller screens */
+@media (max-width: 900px) {
+    .team-main {
+        padding-top: 100px;
     }
 }
 
-@media (max-width: 1200px) and (min-width:901px) {
+/* 5 hexagons per row */
+@media (min-width: 1201px) {
+    #hexGrid { padding-bottom: 4.3%; }
+    .hex { width: 20%; }
+    .hex:nth-child(9n+6) { margin-left: 10%; }
+}
 
-    /* <- 4-3  hexagons per row */
+/* 4 hexagons per row */
+@media (max-width: 1200px) and (min-width: 901px) {
+    #hexGrid { padding-bottom: 5.5%; font-size: 13px; }
+    .hex { width: 25%; }
+    .hex:nth-child(7n+5) { margin-left: 12.5%; }
+}
+
+/* 3 hexagons per row */
+@media (max-width: 900px) and (min-width: 601px) {
+    #hexGrid { padding-bottom: 7.4%; font-size: 14px; }
+    .hex { width: 33.333%; }
+    .hex:nth-child(5n+4) { margin-left: 16.666%; }
+}
+
+/* 2 hexagons per row */
+@media (max-width: 600px) and (min-width: 421px) {
+    #hexGrid { padding-bottom: 11%; font-size: 12px; }
+    .hex { width: 50%; }
+    .hex:nth-child(3n+3) { margin-left: 25%; }
+}
+
+/* === FIX #4: IMPROVED MOBILE LAYOUT === */
+/* Stacks to a single column on very small phones for readability */
+@media (max-width: 420px) {
     #hexGrid {
-        padding-bottom: calc(25% - 10%);
-        font-size: 13px;
+        width: 80%;
     }
-
     .hex {
-        width: 25%;
-        /* = 100 / 4 */
+        width: 100%;
+        margin-bottom: 20px;
     }
-
-    .hex:nth-child(7n+5) {
-        /* first hexagon of even rows */
-        margin-left: 12.5%;
-        /* = width of .hex / 2  to indent even rows */
+    .hex:nth-child(n) {
+        margin-left: 0;
     }
 }
 
-@media (max-width: 900px) and (min-width:601px) {
-
-    /* <- 3-2  hexagons per row */
-    #hexGrid {
-        padding-bottom: calc(33.333% - 10%);
-        font-size: 14px;
-    }
-
-    .hex {
-        width: 33.333%;
-        /* = 100 / 3 */
-    }
-
-    .hex:nth-child(5n+4) {
-        /* first hexagon of even rows */
-        margin-left: 16.666%;
-        /* = width of .hex / 2  to indent even rows */
-    }
+.team-photo-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px; /* Adds some space around the section */
+  box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
-
-    /* <- 2-1  hexagons per row */
-    #hexGrid {
-        padding-bottom: calc(50% - 6%);
-        font-size: 12px;
-    }
-
-    .hex {
-        width: 50%;
-        /* = 100 / 3 */
-    }
-
-    .hex:nth-child(3n+3) {
-        /* first hexagon of even rows */
-        margin-left: 25%;
-        /* = width of .hex / 2  to indent even rows */
-    }
+.team-photo-section h2 {
+  margin-bottom: 30px; /* Space between heading and photo */
 }
 
-@media (max-width: 400px) {
-    #hexGrid {
-        font-size: 8px;
-    }
+.full-team-image {
+  max-width: 90%; /* Ensures the image is responsive */
+  width: 1000px;  /* You can set a max-width for larger screens */
+  height: auto;   /* Maintains the aspect ratio */
+  border-radius: 15px; /* Gives the photo nice rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
 
-
-
-
+/* For smaller screens */
+@media (max-width: 768px) {
+  .full-team-image {
+    max-width: 100%; /* Image takes full width on mobile */
+  }
 }
