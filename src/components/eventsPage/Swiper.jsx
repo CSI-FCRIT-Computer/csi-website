@@ -33,11 +33,11 @@ function App() {
                 loop={true}
                 slidesPerView={'auto'}
                 coverflowEffect={{
-                    rotate: 0,
+                    rotate: 20,
                     stretch: 0,
-                    depth: 100,
-                    modifier: 5,
-                    
+                    depth: 150,
+                    modifier: 1,
+                    slideShadows: true,
                 }}
                 pagination={{ el: '.swiper-pagination', clickable: true }}
                 navigation={{

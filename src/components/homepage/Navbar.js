@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import logo from './COMPUTERFCRIT.png';
 
 import "./Navbar.css";
-import { Style } from "paper/dist/paper-core";
 
 function Navbar() {
   const[active, setActive] = useState(false);

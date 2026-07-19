@@ -255,3 +255,58 @@
     max-width: 100%; /* Image takes full width on mobile */
   }
 }
+
+/* --- Glassmorphism Tab Selector --- */
+.tab-selector-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 6px;
+    width: fit-content;
+    margin: 0 auto 60px auto;
+    position: relative;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.tab-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    border-radius: 40px;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.tab-button:hover {
+    color: #fff;
+}
+
+.tab-button.active {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(245, 206, 149, 0.5);
+}
+
+.active-pill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(245, 206, 149, 0.2), rgba(245, 206, 149, 0.05));
+    border: 1px solid rgba(245, 206, 149, 0.4);
+    box-shadow: 0 0 15px rgba(245, 206, 149, 0.25);
+    border-radius: 40px;
+    z-index: -1;
+}
